@@ -8,6 +8,10 @@ header{
   width: 100%;
   position: sticky;
   z-index: 100;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
 }
 
 #upperNav{
@@ -19,6 +23,7 @@ header{
 
 #upperNav a{
   text-decoration: none;
+  color: #333;
   margin-left: 20px;
 }
 
@@ -208,7 +213,7 @@ header{
   cursor: pointer;
 }
 
-#postAd{
+#postingbtn{
   width: 100px;
   background-color: yellow;
   font-family: 'ProximaNova-Regular,Arial,Helvetica,sans-serif';
@@ -218,6 +223,10 @@ header{
   margin-left: 40px;
   border: 1px solid orange;
   cursor: pointer;
+}
+#postingbtn a{
+  text-decoration: none;
+  font-family: montserrate;
 }
 
 /* footer css starts from here 👇 */
