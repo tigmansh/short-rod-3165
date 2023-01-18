@@ -40,17 +40,27 @@
     border-bottom: 2px solid transparent;
     cursor: pointer;
   }
-  #nav ul li:hover {
+  #nav ul li:hover{
     color: var(--hoverTextColor);
     border-bottom: 4px solid var(--hoverTextColor);
   }
+  /* #nav ul li:hover .slider{
+    overflow: hidden;
+    overflow: visible;
+    color: var(--hoverTextColor);
+    border-bottom: 4px solid var(--hoverTextColor);
+  } */
   
   
   /**module box submenu***/
   .subMenu {
-      position: absolute;
-      height: 400px;
-      top: 51px;
+      /* position: absolute; */
+      position: static;
+      position: relative;
+      position: fixed;
+      /* height: 400px; */
+      /* top: 51px; */
+      top: 250px;
       left: 0;
       right: 0;
       background-color: white;
