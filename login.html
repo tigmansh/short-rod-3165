@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login/Sign-Up</title>
+  <link rel="stylesheet" href="login.css">
+  <style>
+    #alert {
+      display: flex;
+      margin: auto;
+      width: 25%;
+      padding: 5px;
+      border-radius: 10px;
+      font-family: montserrat;
+      justify-content: center;
+      /* margin-bottom: 10px; */
+      margin-top: 15px;
+      background: linear-gradient(to right, #ff105f, #ffad06);
+    }
+
+    #alert h3 {
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- <div class="mainbox">
+    <div id="alert">
+      <h3>Please Login/SignUp Here!</h3>
+    </div> -->
+    <div class="formbox">
+      <div class="buttonbox">
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+        <button type="button" class="toggle-btn" onclick="register()">Register</button>
+      </div>
+      <div class="icon">
+        <img src="fb.png" alt="Error">
+        <img src="tw.png" alt="Error">
+        <img src="gp.png" alt="Error">
+      </div>
+      <form id="login" class="input-grp">
+        <input type="text" id="namee" class="input-space" placeholder="User Id" required>
+        <input type="password" id="passwordd" class="input-space" placeholder="Enter Password" required>
+        <input type="checkbox" class="check-box"><span>Remember Password</span>
+        <button type="submit" class="submit-btn">Log In</button>
+      </form>
+      <form id="register" class="input-grp">
+        <input type="text" id="name" class="input-space" placeholder="User Id" required>
+        <input type="email" id="email" class="input-space" placeholder="Email Id" required>
+        <input type="password" id="password" class="input-space" placeholder="Enter Password" required>
+        <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+        <button type="submit" class="submit-btn">Register</button>
+      </form>
+    </div>
+  </div>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    let x = document.getElementById("login");
+    let y = document.getElementById("register");
+    let z = document.getElementById("btn");
+
+    function register() {
+      x.style.left = "-400px";
+      y.style.left = "50px";
+      z.style.left = "110px";
+    }
+
+    function login() {
+      x.style.left = "50px";
+      y.style.left = "450px";
+      z.style.left = "0px";
+    }
+
+
+    let form = document.getElementById("register");
+
+    let formData = JSON.parse(localStorage.getItem("skinstore-data")) || [];
+
+    form.addEventListener("submit", ops);
+
+    function ops(e) {
+      e.preventDefault();
+
+      let obj = {
+
+        Name: form.name.value,
+        Email: form.email.value,
+        Pass: form.password.value
+
+      }
+      formData.push(obj);
+
+      if (formData.Name == "" && formData.Email == "" && formData.Pass == "") {
+        alert("Fill the crediantials");
+      }
+      else {
+        localStorage.setItem("skinstore-data", JSON.stringify(formData));
+      }
+    }
+
+    let formData1 = JSON.parse(localStorage.getItem("skinstore-data")) || [];
+    let form1 = document.getElementById("login");
+
+    form1.addEventListener("submit", up);
+
+    function up(e) {
+      e.preventDefault();
+
+      formData1.forEach(element => {
+        console.log(element);
+        if (element.Name == form1.namee.value && element.Pass == form1.passwordd.value) {
+          // document.getElementById("alert").textContent = "Signed in Successfully 🎉"
+          Swal.fire({
+            position: "top",
+            icon: "success",
+            title: "Logged In Successfully.",
+            showConfirmButton: false,
+            timer: 1500,
+          });
+          setTimeout(() => {
+            window.location.href = "index.html?name=" + element.Name;
+          }, 2500)
+        }
+        else {
+          // document.getElementById("alert").textContent = " Opps! Invalid Credentials ❌"
+          Swal.fire({
+            position: "top",
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Invalid Credentials!',
+            // footer: '<a href="">Why do I have this issue?</a>'
+          })
+        }
+      });
+    }
+
+  </script>
+</body>
+
+</html>

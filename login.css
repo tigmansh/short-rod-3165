@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    color: white;
+}
+
+body{
+    background: linear-gradient(to right, #02aab0, #00cdac);
+}
+
+.mainbox{
+    height: 100%;
+    width: 100%;
+    background-image: url(loginbanner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.formbox{
+    /* border: 1px solid white; */
+    width: 420px;
+    height: 510px;
+    position: relative;
+    margin: 6% auto;
+    margin-top: 60px;
+    background: black;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.buttonbox{
+    /* border: 1px solid black; */
+    width: 245px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+
+.toggle-btn{
+    /* border: 1px solid black; */
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#btn{
+    /* border: 1px solid black; */
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 130px;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f,#ffad06);
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.icon{
+    margin: 30px auto;
+    text-align: center;
+}
+
+.icon img{
+    width: 40px;
+    margin: 0 12px;
+    box-shadow: 0 0 20px 0 #7f7f7f3d;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.input-grp{
+    /* border: 1px solid black; */
+    top: 180px;
+    position: absolute;
+    width: 320px;
+    /* height: 300px; */
+    transition: .5s;
+}
+
+.input-space{
+    /* border: 1px solid black; */
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.submit-btn{
+    /* border: 1px solid black; */
+    width: 85%;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+.check-box{
+    margin: 30px 10px 30px 0;
+}
+
+span{
+    color: white;
+    font-size: 15px;
+    bottom: 68px;
+    position: absolute;
+}
+
+#login{
+    /* border: 1px solid; */
+    left: 50px;
+}
+#register{
+    left: 450px;
+}
