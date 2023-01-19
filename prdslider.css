@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@600&family=Poppins&family=Quicksand&display=swap');
 
 #popular{
-  margin-left: 65px;
+  margin-left: 70px;
   font-family: poppins;
 }
 #popular2{
@@ -13,13 +13,44 @@
   width: 100%;
   height: 200px;
   position: relative;
-  position: absolute;
-  position: relative;
-  position: fixed;
-  position: static;
   margin: auto;
   overflow-x: scroll;
   overflow-y: hidden;
+}
+
+.swiper-slide p{
+  /* height: 40%; */
+  /* width: 40%; */
+  font-family: montserrat;
+}
+
+
+
+.image h3{
+  font-family: poppins;
+}
+.image2 h3{
+  font-family: poppins;
+}
+.image button{
+  padding: 5px 5px;
+  background-color: #3c3c3c;
+  color: #fff;
+  font-family: montserrat;
+}
+.image2 button{
+  padding: 5px 5px;
+  background-color: #3c3c3c;
+  color: #fff;
+  font-family: montserrat;
+}
+
+#imgMob{
+  margin: auto;
+  width: 45%;
+  height: 60%;
+  margin-bottom: 10px;
+  border: 1px solid red;
 }
 
 .slider::-webkit-scrollbar {
@@ -81,6 +112,8 @@
 }
 
 .swiper {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* border: 1px solid red; */
   width: 100%;
   height: 100%;
 }
@@ -111,13 +144,134 @@
 }
 
 .image img {
-  width: 65%;
-  height: 215px;
-  /* border: 1px solid; */
+  transition: transform .1s;
+  width: 150px;
+  /* border: 1px solid purple; */
+}
+.image2 img {
+  transition: transform .1s;
+  width: 150px;
+  /* border: 1px solid purple; */
 }
 
 .image button {
   width: 69%;
+  /* border: 1px solid red; */
+}
+.image2 button {
+  width: 69%;
+  /* border: 1px solid red; */
+}
+
+.image{
+  /* cursor: pointer; */
+  height: 320px;
+  /* border: 1px solid green; */
+}
+.image2{
+  /* cursor: pointer; */
+  height: 320px;
+  padding: 20px 0px;
+  /* border: 1px solid green; */
+}
+
+.image img:hover{
+  transform: scale(1.5);
+}
+
+.image2 img:hover{
+  transform: scale(1.5);
+}
+
+#mobimg{
+  width: 55%;
+  height: 70%;
+  margin: auto;
+  margin-top: 5px;
+  /* margin-bottom: 2px; */
+  /* border: 1px solid red; */
+}
+#mobimg img{
+  width: 93%;
+}
+
+#mobtitle,#mobprice{
+  margin-bottom: 5px;
+  /* border: 1px solid red; */
+}
+#mobbtn button{
+  border-radius: 5px;
+  padding: 7px;
+  border: none;
+  cursor: pointer;
+}
+#mobbtn button:hover{
+  background-color: #2196F3;
+  color: #fff;
+  transform: scale(1.2);
+}
+#homebtn button{
+  border-radius: 5px;
+  padding: 7px;
+  border: none;
+  cursor: pointer;
+}
+#homebtn button:hover{
+  background-color: #2196F3;
+  color: #fff;
+  transform: scale(1.2);
+}
+
+#furbtn button{
+  border-radius: 5px;
+  padding: 7px;
+  border: none;
+  cursor: pointer;
+}
+#furbtn button:hover{
+  background-color: #2196F3;
+  color: #fff;
+  transform: scale(1.2);
+}
+
+#homeimg{
+  width: 80%;
+  height: 60%;
+  margin: auto;
+  margin-bottom: 10px;
+  /* border: 1px solid red; */
+}
+#homeimg img{
+  width: 75%;
+  height: 100%;
+}
+
+#hometitle,#homeprice{
+  margin-bottom: 10px;
+  /* border: 1px solid red; */
+}
+
+#furimg{
+  width: 90%;
+  height: 40%;
+  margin: auto;
+  /* margin-top: 20px; */
+  /* border: 1px solid red; */
+}
+
+#furimg img{
+  width: 90%;
+  height: 100%;
+  /* border: 1px solid red; */
+}
+
+#furtitle{
+  margin-bottom: 15px;
+  margin-top: 40px;
+  /* border: 1px solid red; */
+}
+#furprice{
+  margin-bottom: 15px;
   /* border: 1px solid red; */
 }
 
@@ -166,6 +320,10 @@
   justify-content: space-between;
 }
 
+.spacebtw a{
+  font-family: poppins;
+}
+
 .fa-chevron-right {
   font-size: 13px;
   color: grey;
@@ -206,7 +364,7 @@
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   color: #9e9e9e;
   display: inline-block;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: montserrat;
   font-size: 16px;
   margin: 35px 10px 10px;
   max-width: 310px;
@@ -270,9 +428,10 @@
 }
 
 #review{
-  width: 80.5%;
-  /* padding-left: 70px; */
+  width: 75%;
   margin: auto;
+  display: flex;
+  justify-content: center;
   /* border: 1px solid red; */
 }
 
