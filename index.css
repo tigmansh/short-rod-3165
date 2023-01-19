@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@600&family=Poppins&family=Quicksand&display=swap');
+
 *{
     box-sizing:border-box;
     margin: 0px;
@@ -25,6 +27,7 @@ header{
   text-decoration: none;
   color: #333;
   margin-left: 20px;
+  font-family: "poppins";
 }
 
 #navbar{
@@ -34,6 +37,7 @@ header{
   position: sticky;
   top: 0;
   z-index: 100;
+  font-family: montserrat;
 }
 #menuToggle
 {
@@ -172,6 +176,7 @@ header{
   border: 0px;
   margin-left: 5px;
   cursor: pointer;
+  font-family: montserrat;
 }
 
 #logo{
@@ -193,6 +198,7 @@ header{
   margin-left: 25px;
   border: 2px solid black;
   padding-left: 20px;
+  font-family: montserrat;
 }
 
 #searchBtn{
@@ -214,9 +220,9 @@ header{
 }
 
 #postingbtn{
-  width: 100px;
+  width: 130px;
   background-color: yellow;
-  font-family: 'ProximaNova-Regular,Arial,Helvetica,sans-serif';
+  /* font-family: 'montserrat'; */
   font-size: 15px;
   margin-top: 30px;
   padding: 2px;
@@ -226,7 +232,8 @@ header{
 }
 #postingbtn a{
   text-decoration: none;
-  font-family: montserrate;
+  color : black;
+  font-family: 'montserrat';
 }
 
 /* footer css starts from here 👇 */

@@ -16,10 +16,6 @@ const Electronics = [
         data: ["Office Chiar","Office Table","Conference Table","Computer Desks"]
     },
     {
-        heading: "Storage",
-        data: ["Printers","Scanners",]
-    },
-    {
         heading: "Playstation Consoles",
         data: ["Sony PS3","Sony PS4","XBox","Sony Playstation"]
     }
