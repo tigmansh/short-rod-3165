@@ -196,24 +196,28 @@ header{
   left: 27px;
   display: block;
 }
+#search{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1%;
+}
 
 #searchBar{
-  height: 50px; 
-  width: 500px;
-  margin-top: 30px;
-  margin-left: 25px;
+  width: 90%;
+  /* margin-left: 25px; */
   border: 2px solid black;
   padding-left: 20px;
   font-family: montserrat;
 }
 
 #searchBtn{
-  height: 49px; 
-  width: 50px;
-  margin-top: 31px;
+  height: 50px; 
+  width:10%;
+  /* margin-top: 31px; */
+
   border: 0px;
   /* margin: auto; */
-  margin-left: -50px;
+  /* margin-left: -50px; */
   cursor: pointer;
   background-color: black;
   color: white;
