@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="visit_store.css" />
+    <title>Visit Store</title>
+    <script src="https://kit.fontawesome.com/2a097abc7b.js" crossorigin="anonymous"></script>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@600&family=Poppins&family=Quicksand&display=swap');
+
+      img {
+        width: 100%;
+        cursor: pointer;
+      }
+      #heading {
+        font-family: montserrat;
+        /* font-weight: 700; */
+        font-size: 22px;
+        margin-left: 12.5%;
+      }
+      body {
+        background-color: #f3f3f3;
+      }
+      .benefits {
+        color: #333;
+        width: 350px;
+        height: fit-content;
+        margin-left: 15px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        position: sticky;
+        top: 15px;
+        margin: 15px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      }
+      .benefits h3 {
+        padding-top: 10px;
+        padding-left: 10px;
+        font-family: montserrat;
+        font-size: 16px;
+      }
+      .info-list {
+        color: #333;
+        /* box-sizing: border-box; */
+        font: inherit;
+        padding: 12px;
+      }
+      .mdc-card {
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        box-sizing: border-box;
+        padding: 0;
+        border-radius: 2px;
+        overflow: hidden;
+        box-shadow: none;
+        margin-bottom: 30px;
+        font-size: 13px;
+      }
+      .mdc-card__horizontal-block {
+        color: #333;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        box-sizing: border-box;
+        display: inline-flex;
+      }
+      .mdc-card__media-item {
+        color: #333;
+        height: 100%;
+        height: 100px;
+        display: inline-block;
+        width: auto;
+        min-width: 100px;
+        border-radius: 3px;
+        margin: 0;
+      }
+      .mdc-card__primary {
+        color: #333;
+        margin: 0;
+        border: 0;
+        font: inherit;
+        display: block;
+        padding: 0 0 0 12px;
+        font-family: sans-serif;
+      }
+      .mdc-card__primary h5{
+        font-family:poppins ;
+        font-size: 15px;
+        margin: 0;
+      }
+      .mdc-card__primary p{
+        font-family:manrope ;
+
+      }
+      #container {
+        display: flex;
+        /* border: 2px solid red; */
+        /* padding: 10px; */
+        /* margin: auto; */
+        justify-content: center;
+        font-family: sans-serif;
+      }
+      .outerbox {
+        margin: 15px;
+        border: 2px solid #fff;
+        background-color: #ffffff;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      }
+      .card {
+        display: flex;
+        /* border: 2px solid blue; */
+        margin: 20px;
+        justify-content: space-between;
+      }
+      .first {
+        margin: 0px;
+        padding: 0px;
+        /* border: 2px solid red; */
+        padding: 0px 50px 0px 0px;
+        /* width: 60%; */
+      }
+      .first h4 {
+        /* border: 2px solid red; */
+        font-family: poppins;
+        margin: 0px;
+        padding: 0px;
+      }
+      .first p {
+        font-size: 15px;
+        /* font-weight: 100; */
+        color: #333;
+        font-family: manrope;
+      }
+      .second img {
+        height: 100%;
+        width: 220px;
+        border-radius: 10px;
+      }
+      .schedule_btn {
+        background-color: #0083ca;
+        transition: transform 0.1s;
+        color: white;
+        padding: 10px;
+        border-radius: 3px;
+        border: 0;
+        font-family: montserrat;
+      }
+      .schedule_btn:hover{
+        transform: scale(1.1);
+      }
+      .location_btn {
+        color: #0083ca;
+        background-color: white;
+        /* font-weight: 600; */
+        padding: 10px;
+        font-family: montserrat;
+
+        border-radius: 3px;
+        border: 0;
+      }
+      button:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <a href="furniture.html">
+        <img
+        class="mySlides"
+        src="https://campaign.kuikr.com/qb/cs/crazysale2020_appli_1280-200_desktop.jpg"
+      />
+      <img
+        class="mySlides"
+        src="https://campaign.kuikr.com/qb/cs/crazysale2020_sofa_1280-200_desktop.jpg"
+      />
+      <img
+        class="mySlides"
+        src="https://campaign.kuikr.com/qb/cs/crazysale2020_tv_1280-200_desktop.jpg"
+      />
+      <img
+        class="mySlides"
+        src="https://campaign.kuikr.com/qb/banners/reuse/Tv_1280x200.png"
+      />
+      <img
+        class="mySlides"
+        src="https://campaign.kuikr.com/qb/covid19/retail_fur_desktop_1280x200.jpg"
+      />
+      </a>
+      
+
+      <!-- <button class="w3-button w3-display-left" onclick="plusDivs(-1)">
+        &#10094;
+      </button>
+      <button class="w3-button w3-display-right" onclick="plusDivs(+1)">
+        &#10095;
+      </button> -->
+    </div>
+    <div id="heading">
+      <p>Quikr Experience Zone</p>
+    </div>
+    <div id="container">
+      <div id="address">
+        <div class="outerbox">
+          <div class="card">
+            <div class="first">
+              <h4>Quikr Bazaar Experience Zone- <br />Soukya Road</h4>
+              <p>
+                Survey No.27/1,27/2,Devalpur Village, Soukyam <br />Road,
+                Hoskote Taluk, Bangalore Rural,<br />Karnataka-560067
+              </p>
+              <button class="schedule_btn">Schedule Now</button>
+              <a
+                href="https://www.google.com/maps/place/QuikrBazaar+Furniture+%26+Appliance+Store/@12.3725005,76.4491633,12z/data=!4m5!3m4!1s0x3ba581a190abbbcd:0x764427a9c2cee155!8m2!3d12.4346418!4d76.382229"
+              >
+                <button class="location_btn"><i class="fa-solid fa-location-dot"></i> VIEW ON MAP</button>
+              </a>
+            </div>
+            <div class="second">
+              <img
+                src="https://campaign.kuikr.com/qb/qb_2020/new/store_image.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="outerbox">
+          <div class="card">
+            <div class="first">
+              <h4>Quikr Bazaar Store - Chennai</h4>
+              <p>
+                #54,Avenue Street, Medavakkam Main Road, <br />
+                Near KP Hospital, Adambakkam <br />
+                Chennai-600088
+              </p>
+              <button class="schedule_btn">Schedule Now</button>
+              <a
+                href="https://www.google.com/maps/place/QuikrBazaar+Store/@12.9910013,80.1985429,21z/data=!4m5!3m4!1s0x3a525deef2c5b147:0x3af2dd61a34ba98a!8m2!3d12.9910596!4d80.198628?hl=en"
+              >
+                <button class="location_btn"><i class="fa-solid fa-location-dot"></i> VIEW ON MAP</button>
+              </a>
+            </div>
+            <div class="second">
+              <img
+                src="https://teja10.kuikr.com/public/core/escrow/assets/images/warehouse/chennai.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="outerbox">
+          <div class="card">
+            <div class="first">
+              <h4>Quikr Bazaar Experience Zone - <br />Powai</h4>
+              <p>
+                55 Corporate Avenue, The United Trading Company,<br />
+                Ground Floor, Saki Vihar<br />Road, Chandivali, Mumbai-400076
+              </p>
+              <button class="schedule_btn">Schedule Now</button>
+              <a
+                href="https://www.google.com/maps/place/QuikrBazaar+Furniture+%26+Appliance+Store+-+Powai/@19.1779521,72.8941138,12z/data=!4m5!3m4!1s0x3be7c97fa1070ec3:0x9deaa54f800a0958!8m2!3d19.1173259!4d72.8897287"
+              >
+                <button class="location_btn"><i class="fa-solid fa-location-dot"></i> VIEW ON MAP</button>
+              </a>
+            </div>
+            <div class="second">
+              <img
+                src="https://campaign.kuikr.com/qb/qb_2020/new/store_image.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="outerbox">
+          <div class="card">
+            <div class="first">
+              <h4>Quikr Bazaar Store -<br />Mysuru</h4>
+              <p>
+                QuikrBazaar Retail Store, No. 637, Ashoka Rd,<br />Lashkar
+                Mohalla, Mandi Mohalla,<br />Mysuru Karnataka-590001
+              </p>
+              <button class="schedule_btn">Schedule Now</button>
+              <a
+                href="https://www.google.com/maps/place/QuikrBazaar+Furniture+%26+Appliance+Store+-+Mysuru/@12.3103806,76.6561649,15z/data=!4m5!3m4!1s0x0:0x555f915385eb7690!8m2!3d12.3103868!4d76.6561089"
+              >
+                <button class="location_btn"><i class="fa-solid fa-location-dot"></i> VIEW ON MAP</button>
+              </a>
+            </div>
+            <div class="second">
+              <img
+                src="https://teja10.kuikr.com/public/core/escrow/assets/images/warehouse/bns1.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="outerbox">
+          <div class="card">
+            <div class="first">
+              <h4>Quikr Experience Zone - Pune</h4>
+              <p>
+                QuikrBazaar Experience Center, S.No 20/2/A,<br />Chamadia
+                warehouse no 22,23,kharadi<br />Mundhwa road,Opp to Autos car
+                spa, Kharadi<br />Pune-411014
+              </p>
+              <button class="schedule_btn">Schedule Now</button>
+              <a
+                href="https://www.google.com/maps/place/QuikrBazaar+Experience+Zone/@18.543754,73.900425,14z/data=!4m8!1m2!2m1!1squikr+bazaar+pune!3m4!1s0x3bc2c180ca15d4ff:0xae4563bae28f4b9!8m2!3d18.5395359!4d73.9353119"
+              >
+                <button class="location_btn"><i class="fa-solid fa-location-dot"></i> VIEW ON MAP</button>
+              </a>
+            </div>
+            <div class="second">
+              <img
+                src="https://teja10.kuikr.com/public/core/escrow/assets/images/warehouse/pune.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="outerbox">
+          <div class="card">
+            <div class="first">
+              <h4>Quikr Bazaar Experience Zone- <br />Soukya Road</h4>
+              <p>
+                Asheerwad Group: 7/73 Gouli Beedi Road, Opp<br />Central Bank,
+                Near Sub Registrar Office Madikeri,<br />Karnataka-571201
+              </p>
+              <button class="schedule_btn">Schedule Now</button>
+              <a
+                href="https://www.google.com/maps/place/QuikrBazaar+Store/@12.4204567,75.7347946,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x32078781e9559d62!8m2!3d12.4204567!4d75.7347946?hl=en"
+              >
+                <button class="location_btn"><i class="fa-solid fa-location-dot"></i> VIEW ON MAP</button>
+              </a>
+            </div>
+            <div class="second">
+              <img
+                src="https://teja10.kuikr.com/public/core/escrow/assets/images/warehouse/Madikeri_QB_Store_Launch1.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="outerbox">
+          <div class="card">
+            <div class="first">
+              <h4>QuikrBazaar Store - Ambadi</h4>
+              <p>
+                Trived Enterprises, Shop no. 9, 10 & 11, Rudra<br />Complex,
+                Ambadi Naka, Bhiwandi Thane -<br />421302
+              </p>
+              <button class="schedule_btn">Schedule Now</button>
+              <a
+                href="https://www.google.com/maps/place/QuikrBazaar+Furniture+%26+Appliance+Store+-+Ambadi/@19.4673858,73.0840829,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xb9ebf59b78a28967!8m2!3d19.4673495!4d73.0840732?hl=en"
+              >
+                <button class="location_btn"><i class="fa-solid fa-location-dot"></i> VIEW ON MAP</button>
+              </a>
+            </div>
+            <div class="second">
+              <img
+                src="https://campaign.kuikr.com/qb/qb_2020/new/store_image.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="outerbox">
+          <div class="card">
+            <div class="first">
+              <h4>QuikrBazaar Store - Nashik</h4>
+              <p>
+                Aarambha Enterprises, Shop no. 4, 5 & 6, Manasi Park
+                Building,<br />Babanagar, Bombay Naka Nashik-422001
+              </p>
+              <button class="schedule_btn">Schedule Now</button>
+              <a
+                href="https://www.google.com/maps/place/QuikrBazaar+Store/@20.0485451,73.7909374,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xfb47863cadd1658!8m2!3d20.0485063!4d73.7909547?hl=en"
+              >
+                <button class="location_btn"><i class="fa-solid fa-location-dot"></i> VIEW ON MAP</button>
+              </a>
+            </div>
+            <div class="second">
+              <img
+                src="https://teja10.kuikr.com/public/core/escrow/assets/images/warehouse/chennai.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="benefits">
+        <h3>Why Visit Store?</h3>
+        <hr />
+        <div class="info-list">
+          <div class="mdc-card">
+            <div class="mdc-card__horizontal-block">
+              <img
+                class="mdc-card__media-item"
+                src="https://teja9.kuikr.com/public/core/escrow/assets/images/warehouse/visit_store1.png"
+              />
+              <section class="mdc-card__primary">
+                <h5>Touch &amp; Feel</h5>
+                <p>
+                  Touch &amp; experience the products at the QuikrBazaar Store
+                  before you make a purchase.
+                </p>
+              </section>
+            </div>
+          </div>
+          <div class="mdc-card">
+            <div class="mdc-card__horizontal-block">
+              <img
+                class="mdc-card__media-item"
+                src="https://teja9.kuikr.com/public/core/escrow/assets/images/warehouse/visit_store2.png"
+              />
+              <section class="mdc-card__primary">
+                <h5>Top Quality, Wide Range</h5>
+                <p>
+                  Wide range of fine quality Furniture, Electronics &amp;
+                  Appliances to choose from.
+                </p>
+              </section>
+            </div>
+          </div>
+          <div class="mdc-card">
+            <div class="mdc-card__horizontal-block">
+              <img
+                class="mdc-card__media-item"
+                src="https://teja9.kuikr.com/public/core/escrow/assets/images/warehouse/visit_store3.png"
+              />
+              <section class="mdc-card__primary">
+                <h5>Budget Prices</h5>
+                <p>
+                  Get the lowest prices &amp; best deals on your favourite
+                  products.
+                </p>
+              </section>
+            </div>
+          </div>
+          <div class="mdc-card">
+            <div class="mdc-card__horizontal-block">
+              <img
+                class="mdc-card__media-item"
+                src="https://teja9.kuikr.com/public/core/escrow/assets/images/warehouse/visit_store4.png"
+              />
+              <section class="mdc-card__primary">
+                <h5>Reuse for Good</h5>
+                <p>
+                  Buying refurbished Products not only saves money, but also
+                  helps save the environment.
+                </p>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > x.length) {
+        slideIndex = 1;
+      }
+      x[slideIndex - 1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+  </script>
+</html>
