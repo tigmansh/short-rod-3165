@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@600&family=Poppins&family=Quicksand&display=swap');
+
+#popular{
+  margin-left: 65px;
+  font-family: poppins;
+}
+#popular2{
+  margin-left: 15px;
+  font-family: poppins;
+}
+
 .slider {
   width: 100%;
   height: 200px;
@@ -111,6 +122,7 @@
 }
 
 #h1 {
+  font-family: montserrat;
   text-align: center;
 }
 
