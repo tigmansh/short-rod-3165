@@ -1,13 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/3af5a307c6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@600&family=Poppins&family=Quicksand&display=swap');
+
+        #mainbox {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            width: 90%;
+            /* border: 1px solid red; */
+            margin: auto;
+            margin-top: 1%;
+            margin-bottom: 4%;
+        }
+
+        h1{
+            margin-top: 2%;
+            margin-left: 6%;
+            font-family: poppins;
+        }
+
+        .body{
+            background-color: #FFEBEE;
+        }
+
+        .box {
+           cursor: pointer;
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 10px 5px;
+            text-align: center;
+            transition: transform 0.3s;
+            /* border: 1px solid red; */
+            font-family: montserrat;
+            line-height: 40px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+        .box:hover{
+            background-color: #4CAF50;
+            transform: scale(1.1);
+            color: #fff
+        }
+        i {
+            font-size: 60px;
+        }
+    </style>
 </head>
-<body>
+
+<body class="body">
+
     <header>
         <div id="upperNav">
           <div>
@@ -190,8 +239,7 @@
               </a>
             </ul>
           </div>
-          <img src="https://i.ibb.co/vV6BL8R/Skin-Verse-1.png" alt="" id="logo" />
-    
+          <a href="index.html" > <img src="https://i.ibb.co/vV6BL8R/Skin-Verse-1.png" alt="" id="logo" /></a>
           <img src="https://www.svgrepo.com/show/26529/location-pin.svg" alt="" style="
                 height: 20px;
                 width: 20px;
@@ -230,15 +278,69 @@
             color: black;
           " /></a>
           <a href="login.html" style="text-decoration: none; color: black;"> <p id="LName">Login/Register</p></a>
+    
           <button id="postingbtn"><a href="Adcategory.html">Post Free Ads</a></button>
         </nav>
       </header>
 
-      <div id="nothing">
-        <h1>Nothing Found By This Name ❌</h1>
-      </div>
+    <h1>Select Category</h1>
+    <div id="mainbox">
+        <div class="box">
+            <i class="fa-solid fa-taxi"></i>
+            <h4>Cars & Bikes</h4>
+        </div>
+        <a href="mobile_form.html" style="text-decoration: none; color: black;">
+            <div class="box">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h4>Mobiles & Tablets</h4>
+            </div>
+        </a>
+        <a href="furnitureForm.html" style="text-decoration: none; color: black;">
+            <div class="box">
+                <i class="fa-solid fa-couch"></i>
+                <h4>Furnitures</h4>
+            </div>
+        </a>
+        <div class="box">
+            <i class="fa-solid fa-hard-drive"></i>
+            <h4>Appliances</h4>
+        </div>
+        <div class="box">
+            <i class="fa-brands fa-servicestack"></i>
+            <h4>Services</h4>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-paw"></i>
+            <h4>Pets & Pets care</h4>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-users"></i>
+            <h4>Community</h4>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-landmark-flag"></i>
+            <h4>Real Estate</h4>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-user-graduate"></i>
+            <h4>Education & Training</h4>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-headphones"></i>
+            <h4>Misic & Entertainment</h4>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-fire-flame-curved"></i>
+            <h4>Events</h4>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-house-laptop"></i>
+            <h4>Home & Lifestyle</h4>
+        </div>
+    </div>
 
-      <footer>
+
+    <footer>
         <hr />
         <div id="upperPart">
           <div>
@@ -578,55 +680,5 @@
         </div>
       </footer>
 </body>
-
-<script>
-  let key = new URLSearchParams(document.location.search);
- let name = key.get("name");
- document.getElementById("LName").textContent =name;
-</script>
-
-<script>
-    let searchBar = document.getElementById("searchBar");
-    let searchBtn = document.getElementById("searchBtn");
-
-    searchBtn.addEventListener("click",()=>{
-    if(searchBar.value == "mobile"){
-      window.location.href="mobile.html";
-    }
-    else if(searchBar.value == "furniture"){
-      window.location.href="furniture.html";
-    }
-    else if(searchBar.value == "Furniture"){
-      window.location.href="furniture.html";
-    }
-    else if(searchBar.value == "Furnitures"){
-      window.location.href="furniture.html";
-    }
-    else if(searchBar.value == "furnitures"){
-      window.location.href="furniture.html";
-    }
-    else if(searchBar.value == "sofa set"){
-      window.location.href="furniture.html";
-    }
-    else if(searchBar.value == "Sofa set"){
-      window.location.href="furniture.html";
-    }
-    else if(searchBar.value == "sofa sets"){
-      window.location.href="furniture.html";
-    }
-    else if(searchBar.value == "Sofa sets"){
-      window.location.href="furniture.html";
-    }
-    else if(searchBar.value == "Mobiles"){
-      window.location.href="mobile.html";
-    }
-    else if(searchBar.value == "mobiles"){
-      window.location.href="mobile.html";
-    }
-    else{
-      window.location.href="none.html";
-    }
-    })
-</script>
 
 </html>
