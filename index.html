@@ -343,11 +343,11 @@
     <div>
       <img src="https://teja8.kuikr.com/escrow/assets/image/quikrBazaar/MT_links_bg.png" alt="Error">
       <div class="spacebtw">
-        <a href="">Used Mobiles</a>
+        <a href="mobile.html">Used Mobiles</a>
         <i class="fa-solid fa-chevron-right"></i>
       </div>
       <div class="spacebtw">
-        <a href="">Mobiles</a>
+        <a href="mobile.html">Mobiles</a>
         <i class="fa-solid fa-chevron-right"></i>
       </div>
       <div class="spacebtw">
@@ -786,14 +786,18 @@
     <h4>Browse by Categories</h4>
   </div><br>
   <div id="caty">
-    <div>
-      <i class="fa-solid fa-laptop"></i>
-      <p>Mobile & Tablets</p>
-    </div>
-    <div>
-      <i class="fa-solid fa-couch"></i>
-      <p>Furnitures & Decor</p>
-    </div>
+    <a href="mobile.html" style="text-decoration: none; color: #333;">
+      <div>
+        <i class="fa-solid fa-laptop"></i>
+        <a href="mobile.html" style="text-decoration: none; color: #333;"><p>Mobile & Tablets</p></a>
+      </div>
+    </a>
+    <a href="furniture.html" style="text-decoration: none; color: #333;">
+      <div>
+        <i class="fa-solid fa-couch"></i>
+        <a href="furniture.html" style="text-decoration: none; color: #333;"><p>Furnitures & Decor</p></a>
+      </div>
+    </a>
     <div>
       <i class="fa-solid fa-car"></i>
       <p>Car & Bikes</p>
@@ -1218,6 +1222,7 @@
     </div>
   </footer>
 </body>
+<<<<<<< HEAD
 <!-- <script>
     $(document).ready(function () {
       $("#hamburger-menu-button").checked(function () {
@@ -1230,6 +1235,52 @@
     let name = key.get("name");
     document.getElementById("LName").textContent =name;
   </script>
+=======
+<script>
+    let searchBar = document.getElementById("searchBar");
+    let searchBtn = document.getElementById("searchBtn");
+
+    searchBtn.addEventListener("click",()=>{
+    if(searchBar.value == "mobile"){
+      window.location.href="mobile.html";
+    }
+    else if(searchBar.value == "furniture"){
+      window.location.href="furniture.html";
+    }
+    else if(searchBar.value == "Furniture"){
+      window.location.href="furniture.html";
+    }
+    else if(searchBar.value == "Furnitures"){
+      window.location.href="furniture.html";
+    }
+    else if(searchBar.value == "furnitures"){
+      window.location.href="furniture.html";
+    }
+    else if(searchBar.value == "sofa set"){
+      window.location.href="furniture.html";
+    }
+    else if(searchBar.value == "Sofa set"){
+      window.location.href="furniture.html";
+    }
+    else if(searchBar.value == "sofa sets"){
+      window.location.href="furniture.html";
+    }
+    else if(searchBar.value == "Sofa sets"){
+      window.location.href="furniture.html";
+    }
+    else if(searchBar.value == "Mobiles"){
+      window.location.href="mobile.html";
+    }
+    else if(searchBar.value == "mobiles"){
+      window.location.href="mobile.html";
+    }
+    else{
+      window.location.href="none.html";
+    }
+    })
+  </script>
+
+>>>>>>> 8854532262ff50981914f0db86274f4053bff001
 <script src="script.js" type="module"></script>
 
 </html>
