@@ -144,12 +144,12 @@
 }
 
 .image img {
-  transition: transform .1s;
+  transition: transform .5s;
   width: 150px;
   /* border: 1px solid purple; */
 }
 .image2 img {
-  transition: transform .1s;
+  transition: transform .5s;
   width: 150px;
   /* border: 1px solid purple; */
 }
@@ -176,11 +176,11 @@
 }
 
 .image img:hover{
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 .image2 img:hover{
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 #mobimg{
