@@ -224,14 +224,16 @@
                 style="height: 20px; width: 20px" />
             </button>
           </div>
-          <img src="http://cdn.onlinewebfonts.com/svg/img_301872.png" alt="" style="
-                width: 30px;
-                height: 30px;
-                margin-top: 40px;
-                margin-left: 50px;
-              " />
-          <a href="login.html" style="text-decoration: none; color: black;"> <p>Login/Register</p></a>
-          <button id="postingbtn"><a href="postAd.html">Post Free Ads</a></button>
+          <a href="login.html"><img src="http://cdn.onlinewebfonts.com/svg/img_301872.png" alt="" style="
+            width: 30px;
+            height: 30px;
+            margin-top: 40px;
+            margin-left: 50px;
+            text-decoration: none;
+            color: black;
+          " /></a>
+          <a href="login.html" style="text-decoration: none; color: black;"> <p id="LName">Login/Register</p></a>
+          <button id="postingbtn"><a href="">Post Free Ads</a></button>
         </nav>
     </header>
 
@@ -251,7 +253,7 @@
         <input type="text" placeholder="Image URL..." class="input">
 
         <label for="price">Price</label>  
-        <input type="text" placeholder="Enter Price" class="input">
+        <input type="number" placeholder="Enter Price" class="input">
     
 
         <button type="submit" id="postAdBtn">Post Ad Now</button>
@@ -596,7 +598,10 @@
           </div>
         </div>
       </footer>
+      
 </body>
+
+
 <script>
   let searchBar = document.getElementById("searchBar");
   let searchBtn = document.getElementById("searchBtn");
