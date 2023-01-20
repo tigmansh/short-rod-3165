@@ -230,6 +230,8 @@ header{
 }
 
 #postingbtn{
+  border-radius: 7px;
+  border: none;
   width: 130px;
   background-color: yellow;
   /* font-family: 'montserrat'; */
@@ -237,8 +239,11 @@ header{
   margin-top: 30px;
   padding: 2px;
   margin-left: 40px;
-  border: 1px solid orange;
+  border: 2px solid #FFCA28;
   cursor: pointer;
+}
+footer{
+  background-color: #F3F3F3;
 }
 #postingbtn a{
   text-decoration: none;
