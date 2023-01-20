@@ -245,6 +245,15 @@ header{
   color : black;
   font-family: 'montserrat';
 }
+#nothing{
+  font-family: montserrat;
+  /* margin: auto; */
+  text-align: center;
+  padding: 250px 0px 170px 0px;
+}
+/* #mobilesImg{
+  width: fit-content;
+} */
 
 /* footer css starts from here 👇 */
 
