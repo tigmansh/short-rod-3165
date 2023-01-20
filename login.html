@@ -29,6 +29,21 @@
 
 <body>
 
+  <div class="area" >
+    <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+    </ul>
+</div >
+
   <!-- <div class="mainbox">
     <div id="alert">
       <h3>Please Login/SignUp Here!</h3>
@@ -117,7 +132,7 @@
         if (element.Name == form1.namee.value && element.Pass == form1.passwordd.value) {
           // document.getElementById("alert").textContent = "Signed in Successfully 🎉"
           Swal.fire({
-            position: "top",
+            position: "centre",
             icon: "success",
             title: "Logged In Successfully.",
             showConfirmButton: false,
@@ -130,11 +145,9 @@
         else {
           // document.getElementById("alert").textContent = " Opps! Invalid Credentials ❌"
           Swal.fire({
-            position: "top",
-            icon: 'error',
+            position: "centre",
             title: 'Oops...',
             text: 'Invalid Credentials!',
-            // footer: '<a href="">Why do I have this issue?</a>'
           })
         }
       });

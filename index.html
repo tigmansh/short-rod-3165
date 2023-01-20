@@ -233,7 +233,7 @@
             margin-top: 40px;
             margin-left: 50px;
           " />
-      <a href="login.html" style="text-decoration: none; color: black;"> <p>Login/Register</p></a>
+      <a href="login.html" style="text-decoration: none; color: black;"> <p id="LName">Login/Register</p></a>
       <button id="postingbtn"><a href="postAd.html">Post Free Ads</a></button>
     </nav>
   </header>
@@ -1225,6 +1225,11 @@
       });
     });
   </script> -->
+  <script>
+     let key = new URLSearchParams(document.location.search);
+    let name = key.get("name");
+    document.getElementById("LName").textContent =name;
+  </script>
 <script src="script.js" type="module"></script>
 
 </html>
