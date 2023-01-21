@@ -1,62 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./index.css">
     <title>Document</title>
-    <script src="https://kit.fontawesome.com/3af5a307c6.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="index.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@600&family=Poppins&family=Quicksand&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@600&family=Poppins&family=Quicksand&display=swap');
 
-        #mainbox {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-            width: 90%;
-            /* border: 1px solid red; */
-            margin: auto;
-            margin-top: 1%;
-            margin-bottom: 4%;
-        }
-
-        h1{
-            margin-top: 2%;
-            margin-left: 6%;
-            font-family: poppins;
-        }
-
-        .body{
-            background-color: #FFEBEE;
-        }
-
-        .box {
-           cursor: pointer;
-            background-color: #fff;
-            border-radius: 20px;
-            padding: 10px 5px;
-            text-align: center;
-            transition: transform 0.3s;
-            /* border: 1px solid red; */
-            font-family: montserrat;
+       #container{
+        overflow: auto;
+        background-color:#ece7e9 ;
+       }
+       #pic {
+        width: 50%;
+        height: 100%;
+        background-image: url("https://i.ibb.co/yFb8nNZ/3d-shopping-cart-with-cloud-online-shopping-digital-marketing-ideas-basket-promotional-labels-white.jpg");
+        background-size: cover;
+        /* background-p;
+         */
+         /* background-attachment: fixed; */
+        /* border: 2px solid red; */
+       }
+        #appen{
+            /* border: 2px solid green; */
+            display: flex;
+            width: 100%;
+            overflow: auto;
+            font-size: 15px;
             line-height: 40px;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            margin-bottom: 15px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            background-color: rgb(255, 235, 238);
+         border-radius: 10px
+            ;
         }
-        .box:hover{
-            background-color: #4CAF50;
+        #container img{
+            display: block;
+            width: 300px;
+            height: 220px;
+        }
+        #main{
+            display: flex;
+            width: 93%;
+            margin: auto;
+            /* border: 1px solid rebeccapurple; */
+            justify-content: space-between;
+            height: 80vh;
+            margin-top: 30px;
+        }
+        #main>div{
+            width: 50%;
+            /* border: 1px solid red; */
+        }
+        #info{
+            padding-left: 30px;
+            /* text-align: center; */
+        }
+        /* #pic{
+            position: sticky;
+        } */
+        p{
+            font-family: poppins;
+            font-size: 16px;
+
+
+        }
+        h4{
+            font-family: montserrat;
+            font-size: 20px;
+        }
+        h5{
+            font-family: montserrat; 
+            font-size: 18px;
+        }
+       #cancel{
+            color: #fff;
+            background-color: #333;
+            font-family: montserrat;
+            /* display: block; */
+            margin: auto;
+            width: 140px;
+            padding: 5px;
+            border-radius: 4px;
+            border: none;
+            transition: transform 0.3s;
+        }
+        #cancel:hover{
             transform: scale(1.1);
-            color: #fff
         }
-        i {
-            font-size: 60px;
-        }
+
     </style>
 </head>
-
-<body class="body">
-
+<body>
   <header>
     <div id="upperNav">
       <div>
@@ -285,63 +322,15 @@
       <button id="postingbtn"><a href="Adcategory.html">Post Free Ads</a></button>
     </nav>
   </header>
-    <h1>Select Category</h1>
-    <div id="mainbox">
-        <div class="box">
-            <i class="fa-solid fa-taxi"></i>
-            <h4>Cars & Bikes</h4>
-        </div>
-        <a href="mobile_form.html" style="text-decoration: none; color: black;">
-            <div class="box">
-                <i class="fa-solid fa-mobile-screen-button"></i>
-                <h4>Mobiles & Tablets</h4>
-            </div>
-        </a>
-        <a href="furnitureForm.html" style="text-decoration: none; color: black;">
-            <div class="box">
-                <i class="fa-solid fa-couch"></i>
-                <h4>Furnitures</h4>
-            </div>
-        </a>
-        <div class="box">
-            <i class="fa-solid fa-hard-drive"></i>
-            <h4>Appliances</h4>
-        </div>
-        <div class="box">
-            <i class="fa-brands fa-servicestack"></i>
-            <h4>Services</h4>
-        </div>
-        <div class="box">
-            <i class="fa-solid fa-paw"></i>
-            <h4>Pets & Pets care</h4>
-        </div>
-        <div class="box">
-            <i class="fa-solid fa-users"></i>
-            <h4>Community</h4>
-        </div>
-        <div class="box">
-            <i class="fa-solid fa-landmark-flag"></i>
-            <h4>Real Estate</h4>
-        </div>
-        <div class="box">
-            <i class="fa-solid fa-user-graduate"></i>
-            <h4>Education & Training</h4>
-        </div>
-        <div class="box">
-            <i class="fa-solid fa-headphones"></i>
-            <h4>Misic & Entertainment</h4>
-        </div>
-        <div class="box">
-            <i class="fa-solid fa-fire-flame-curved"></i>
-            <h4>Events</h4>
-        </div>
-        <div class="box">
-            <i class="fa-solid fa-house-laptop"></i>
-            <h4>Home & Lifestyle</h4>
-        </div>
+    <div id="main">
+        <div id="pic"></div>
+     <div id="container">
+        <!-- append data in tabular form -->
+     </div>
+
     </div>
-
-
+    <br>
+    <br>
     <footer>
         <hr />
         <div id="upperPart">
@@ -682,8 +671,98 @@
         </div>
       </footer>
 </body>
- <!-- Do not touch this code !!!!!!!!!! -->
- <script>
+<script>
+   let cardata= JSON.parse( localStorage.getItem("order"));
+  console.log(cardata)
+   let container=document.getElementById("container");
+   function showdata(order){
+    container.innerHTML=null
+    cardata.forEach((item,index)=>{
+    let main=document.createElement("div");
+        main.setAttribute("id","appen");
+        let img=document.createElement("img");
+        img.setAttribute("src",item.image)
+        let title=document.createElement("h4");
+        title.innerText=item.title;
+        let price=document.createElement("h5");
+        price.innerText= "₹"+" "+item.price;
+        let desc=document.createElement("p")
+        desc.innerText=item.description
+        let open=document.createElement("p");
+        open.innerText="Arriving in 7 days"
+        let btn=document.createElement("button")
+        btn.setAttribute("id","cancel")
+        btn.addEventListener("click",()=>{
+            cardata.splice(index,1);
+
+localStorage.setItem("order",JSON.stringify(cardata));
+showdata()
+        })
+        btn.innerText="Cancel Order"
+        let div=document.createElement("div");
+        div.setAttribute("id","info")
+        div.append(title,desc,price,open,btn);
+        main.append(img,div)
+        container.append(main)
+         
+})
+
+   }
+showdata()
+ 
+//     console.log(main)
+  
+       
+       
+
+//  console.log(card)
+  
+</script>
+<script>
+    let searchBar = document.getElementById("searchBar");
+    let searchBtn = document.getElementById("searchBtn");
+
+    searchBtn.addEventListener("click",()=>{
+    if(searchBar.value == "mobile"){
+      window.location.href="mobile.html";
+    }
+    else if(searchBar.value == "furniture"){
+      window.location.href="furniture.html";
+    }
+    else if(searchBar.value == "Furniture"){
+      window.location.href="furniture.html";
+    }
+    else if(searchBar.value == "Furnitures"){
+      window.location.href="furniture.html";
+    }
+    else if(searchBar.value == "furnitures"){
+      window.location.href="furniture.html";
+    }
+    else if(searchBar.value == "sofa set"){
+      window.location.href="furniture.html";
+    }
+    else if(searchBar.value == "Sofa set"){
+      window.location.href="furniture.html";
+    }
+    else if(searchBar.value == "sofa sets"){
+      window.location.href="furniture.html";
+    }
+    else if(searchBar.value == "Sofa sets"){
+      window.location.href="furniture.html";
+    }
+    else if(searchBar.value == "Mobiles"){
+      window.location.href="mobile.html";
+    }
+    else if(searchBar.value == "mobiles"){
+      window.location.href="mobile.html";
+    }
+    else{
+      window.location.href="none.html";
+    }
+    })
+  </script>
+  <!-- Do not touch this code !!!!!!!!!! -->
+<script>
   let Display_name = document.getElementById("LName");
   let userDname = JSON.parse(localStorage.getItem("display-name"));
   Display_name.textContent = userDname;

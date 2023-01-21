@@ -183,16 +183,18 @@
           <span></span>
   
           <ul id="menu">
-           <img src="https://i.ibb.co/0JGD23q/Refurbay-TP.png" alt="logo" style="width: 170px; height: 170px" /> 
+            <img src="https://i.ibb.co/0JGD23q/Refurbay-TP.png" alt="logo" style="width: 170px; height: 170px" />
             <hr />
-            <a href="login.html">
-              <li id="logo1">
-                <img
-                  src="https://mpng.subpng.com/20180925/txu/kisspng-computer-icons-clip-art-login-portable-network-gra-user-login-person-man-enter-svg-png-icon-free-down-5baa7bca379ab4.6410690315378994662278.jpg"
-                  alt="" style="width: 20px; height: 20px; margin-right: 5px" />
-                  Logout
-              </li>
-            </a>
+           
+              <a href="login.html">
+                <li id="logo1">
+                  <img
+                    src="https://mpng.subpng.com/20180925/txu/kisspng-computer-icons-clip-art-login-portable-network-gra-user-login-person-man-enter-svg-png-icon-free-down-5baa7bca379ab4.6410690315378994662278.jpg"
+                    alt="" style="width: 20px; height: 20px; margin-right: 5px" />
+                    Logout
+                </li>
+              </a>
+           
             <hr />
   
             <a href="#">
@@ -204,7 +206,7 @@
               </li>
             </a>
   
-            <a href="#">
+            <a href="order.html">
               <li>
                 <img src="https://toppng.com/uploads/preview/payment-history-icon-11553476397wfa17tvwpv.png" alt="" style="
                       width: 20px;
@@ -212,7 +214,7 @@
                       background-color: transparent;
                       margin-right: 5px;
                     " />
-                Orders & Payments
+               My Orders
               </li>
             </a>
   
@@ -319,7 +321,7 @@
             </a>
           </ul>
         </div>
-       <a href="./index.html"><img src="https://i.ibb.co/vV6BL8R/Skin-Verse-1.png" alt="" id="logo" /></a> 
+        <img src="https://i.ibb.co/vV6BL8R/Skin-Verse-1.png" alt="" id="logo" />
   
         <img src="https://www.svgrepo.com/show/26529/location-pin.svg" alt="" style="
               height: 20px;
@@ -724,7 +726,7 @@
   <script>
     // Write all necessery JS here
     let container=document.getElementById("cart-container")
-    let cardata=JSON.parse(localStorage.getItem("cart"))||[]
+    let cardata=JSON.parse(localStorage.getItem("cart"))
     let lsdata=JSON.parse(localStorage.getItem("unknown"))||[]
     let price1=document.getElementById("cart-total");
     console.log(cardata)
@@ -787,6 +789,7 @@
         
         localStorage.setItem("unknown",JSON.stringify(lsdata));
         cardata.splice(index,1);
+
         localStorage.setItem("cart",JSON.stringify(cardata));
         document.getElementById("item").innerText=cardata.length;
         if(cardata.length===0){
@@ -814,12 +817,16 @@
       })
     }
     shopdata(cardata)
-    let to =document.getElementById("item")
-    to.textContent=cardata.length;
-    let buy_btn = document.getElementById("buy")
-    buy_btn.addEventListener("click",()=>{
-     
-      window.location.href="address.html";
+
+  
+  
+    let to=document.getElementById("item")
+    to.innerText=cardata.length;
+    document.getElementById("buy").addEventListener("click",()=>{
+      // let order
+      localStorage.setItem("order",JSON.stringify( cardata))
+      window.location.pathname="address.html"
+
       localStorage.removeItem("cart")
     })
     let coupon=document.getElementById("coupne");
