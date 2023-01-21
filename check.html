@@ -44,7 +44,7 @@
   #main {
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 60%;
     height: 490px;
     /* border: 1px solid red; */
     justify-content: space-between;
@@ -764,16 +764,16 @@
   btn.addEventListener("click", () => {
     let a = `${Math.floor(Math.random() * 9000 + 1000)}`
 
-    // alert(`OTP for payment verification ${a}`)
-    Swal.fire({
-      title: `OTP for payment verification ${a}`,
-      showClass: {
-        popup: 'animate__animated animate__fadeInDown'
-      },
-      hideClass: {
-        popup: 'animate__animated animate__fadeOutUp'
-      }
-    })
+    alert(`OTP for payment verification ${a}`)
+    // Swal.fire({
+    //   title: `OTP for payment verification ${a}`,
+    //   showClass: {
+    //     popup: 'animate__animated animate__fadeInDown'
+    //   },
+    //   hideClass: {
+    //     popup: 'animate__animated animate__fadeOutUp'
+    //   }
+    // })
 
 
 
@@ -783,16 +783,26 @@
 
       // alert("Payment Successful")
       Swal.fire({
+<<<<<<< HEAD
         position: "centre",
         icon: "success",
         title: "Product Added to Cart.",
         showConfirmButton: false,
         timer: 1500,
       });
+=======
+            position: "centre",
+            icon: "success",
+            title: "Payment Successful.",
+            showConfirmButton: false,
+            timer: 1500,
+          });
+>>>>>>> b75960c81f775727b8b7916de748f628cdd446ba
       // alert("Delivery within 7 days")
       // alert("Thanks for visiting RE-Ferbay.com")
       // window.location = "./index.html"
       Swal.fire({
+<<<<<<< HEAD
         title: 'Thanks for Shopping with ReFerbay',
         showClass: {
           popup: 'animate__animated animate__fadeInDown'
@@ -804,6 +814,19 @@
       setTimeout(() => {
         window.location.href = "furniture.html"
       }, 3000)
+=======
+      title: 'Thanks for Shopping with ReFurbay',
+      showClass: {
+        popup: 'animate__animated animate__fadeInDown'
+      },
+      hideClass: {
+        popup: 'animate__animated animate__fadeOutUp'
+      }
+    })
+          setTimeout(()=>{
+            window.location.href="index.html"
+          },3000)
+>>>>>>> b75960c81f775727b8b7916de748f628cdd446ba
     }
 
   })
