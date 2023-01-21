@@ -693,6 +693,7 @@
       </div>
     </footer>
 </body>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
   
     let container=document.getElementById("cloth-container")
@@ -770,12 +771,22 @@
             }
           }
           if(ready==true){
-            alert("Product Already in Cart")
+            Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Product Already in Cart!'
+          })
           }else{
             arr.push({...element,quantity:1});
             console.log(cardata)
           localStorage.setItem("cart",JSON.stringify(arr));
-          alert("Product Added To Cart")
+          Swal.fire({
+            position: "centre",
+            icon: "success",
+            title: "Product Added to Cart.",
+            showConfirmButton: false,
+            timer: 1500,
+          });
 
           }
          
