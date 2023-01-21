@@ -1,356 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comfort means RE-FERBAY Furniture</title>
-    <link rel="stylesheet" href="index.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css">
+    <title>Cart </title>
     <style>
        @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@600&family=Poppins&family=Quicksand&display=swap');
-         body{
-            background-color: #f3f3f3;
+      
+      .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 90px;
+        font-size: 24px;
+        /* border: 1px solid green; */
+        margin-top: 8px;
 
-        }
-        #btn{
-            display: flex;
-            justify-content: space-around;
-        }
-        #cloth-container{
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-            grid-auto-rows: 500px;
-            gap: 25px;
-            width: 95%;
-            margin: auto;
-            margin-top: 20px;
-
-        }
-        #cloth-container img{
-            width: 100%;
-            height: 340px;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-           
-        }
-        #cloth-container>div{
-            text-align: center;
-            /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
-            /* box-shadow: rgba(0.00,0.00,0.00,6.67) 0px 7px 29px 0px; */
+      }
+      #cart-container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        width: 93%;
+        grid-auto-rows: 430px;
+        margin: auto;
+        text-align: center;
+        gap: 20px;
+        margin-top: 20px;
+      }
+      img{
+        width: 100%;
+        height: 300px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+      #cart-container>div{
+        /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-            line-height: 25px;
-            border-radius: 10px;
-            background-color: #fff;
-          
-
-        }
-        #cloth-container>div>div>button{
-            display: block;
-            margin: auto;
-            width: 120px;
-            height: 30px;
-           border-radius: 3px;
-            background-color: #333;
-            color: white;
-            font-size: 15px;
-            border: none;
-            margin-top: 15px;
-            font-family: montserrat;
-            transition: transform 0.3s;
-        }
-        #cloth-container>div>div>button:hover{
-          transform: scale(1.1);
-        }
-        #cloth-container>div>h2{
-          margin-left: 20px;
-          font-size: 18px;
-            font-family: montserrat;
-
-        }
-        #cloth-container>div>p{
-          margin-left: 20px;
-            font-family: poppins;
-
-        }
-        #filter{
-          
-            border: none;
-           font-size: 18px;
-            width: 190px;
-            border-radius: 20px;
-            height: 30px;
-         
-        color: rgb(42, 43, 43);
-        }
-       
-      .nav1{
-        margin-top: 30px;
-        margin-left: 3.3%;
-        font-size: 15px;
-        color: rgb(42, 43, 43);
-        line-height: 38px;
+         */
+         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+         /* padding-left:10px ; */
+   border-radius: 15px;
+        /* background-color: #fff; */
+        background-color: rgb(255, 235, 238);
         font-family: poppins;
       }
-
-  
-     
-      span:hover{
-            color: #0083ca;
-            border-bottom: 2px solid #0083ca
-      }
-      #function{
-        font-size: 20px;
-        /* color: ; */
-        font-family: poppins;
-        color: rgb(42, 43, 43);
-        margin-left: 3.3%;
-      }
-     
- 
-    </style>
-</head>
-<body>
-
-  <header>
-    <div id="upperNav">
-      <div>
-        <a href="#"><img src="https://static.thenounproject.com/png/5015922-200.png" alt=""
-            style="width: 20px; height: 20px; margin-right: 5px" />
-          For Business</a>
-
-        <a href="#"><img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlgHtcbzB91mS34aEhKLrPEVZB6kYb9V1VQA&usqp=CAU"
-            alt="" style="width: 20px; height: 20px; margin-right: 5px" />
-          Download The App</a>
-      </div>
-
-      <div>
-        <a href="#"><img src="http://cdn.onlinewebfonts.com/svg/img_456370.png" alt=""
-            style="width: 20px; height: 20px; margin-right: 5px" />
-          Deals</a>
-
-        <a href="visit_store.html"><img src="https://i.pinimg.com/564x/db/2c/40/db2c407b44a5802ecadc05c1e3fc266d.jpg" alt=""
-            style="width: 20px; height: 20px; margin-right: 5px" />
-          Visit Our Store</a>
-
-        <a href="#"><img
-            src="https://www.clipartsmania.com/gif/currency/india-rupee-symbol-gif-animation-black.gif"
-            alt="" style="width: 20px; height: 20px; margin-right: 5px" />
-          Discount on Premium Ads</a>
-
-        <a href="#"><img src="http://cdn.onlinewebfonts.com/svg/img_297674.png" alt=""
-            style="width: 20px; height: 20px; margin-right: 5px" />
-          Cart</a>
-
-        <a href="#"><img src="https://www.svgrepo.com/show/151296/live-chat.svg" alt=""
-            style="width: 20px; height: 20px; margin-right: 5px" />
-          NXT</a>
-      </div>
-    </div>
-
-    <nav role="navigation" id="navbar">
-      <div id="menuToggle">
-        <input type="checkbox" id="hamburger-menu-button" />
-
-        <span></span>
-        <span></span>
-        <span></span>
-
-        <ul id="menu">
-          <img src="https://i.ibb.co/0JGD23q/Refurbay-TP.png" alt="logo" style="width: 170px; height: 170px" />
-          <hr />
-          <a href="login.html">
-            <li>
-              <img
-                src="https://mpng.subpng.com/20180925/txu/kisspng-computer-icons-clip-art-login-portable-network-gra-user-login-person-man-enter-svg-png-icon-free-down-5baa7bca379ab4.6410690315378994662278.jpg"
-                alt="" style="width: 20px; height: 20px; margin-right: 5px" />
-                Login/Register
-            </li>
-          </a>
-          <hr />
-
-          <a href="#">
-            <li>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/User_font_awesome.svg/1024px-User_font_awesome.svg.png"
-                alt="" style="width: 20px; height: 20px; margin-right: 5px" />
-              My Account
-            </li>
-          </a>
-
-          <a href="#">
-            <li>
-              <img src="https://toppng.com/uploads/preview/payment-history-icon-11553476397wfa17tvwpv.png" alt="" style="
-                    width: 20px;
-                    height: 20px;
-                    background-color: transparent;
-                    margin-right: 5px;
-                  " />
-              Orders & Payments
-            </li>
-          </a>
-
-          <a href="#">
-            <li>
-              <img src="https://www.svgrepo.com/show/12172/smartphone-ad.svg" alt="" style="
-                    width: 25px;
-                    height: 25px;
-                    background-color: transparent;
-                    margin-right: 5px;
-                  " />
-              My Ads
-            </li>
-          </a>
-          <hr />
-
-          <h4 style="color: grey">CATEGORIES</h4>
-
-          <a href="#">
-            <li>
-              <img src="http://cdn.onlinewebfonts.com/svg/img_452750.png" alt=""
-                style="width: 20px; height: 20px; margin-right: 5px" />
-              Services
-            </li>
-          </a>
-
-          <a href="#">
-            <li>
-              <img src="https://static.thenounproject.com/png/5015922-200.png" alt=""
-                style="width: 20px; height: 20px; margin-right: 5px" />
-              Jobs
-            </li>
-          </a>
-
-          <a href="#">
-            <li>
-              <img
-                src="https://toppng.com/uploads/preview/font-car-svg-png-icon-free-download-icon-car-11563232486o4ytppwzhy.png"
-                alt="" style="width: 20px; height: 20px; margin-right: 5px" />
-              Cars
-            </li>
-          </a>
-
-          <a href="#">
-            <li>
-              <img src="https://freesvg.org/img/motorcycleicon.png" alt=""
-                style="width: 20px; height: 20px; margin-right: 5px" />
-              Bikes
-            </li>
-          </a>
-
-          <a href="#">
-            <li>
-              <img src="https://www.svgrepo.com/show/60919/sofa.svg" alt=""
-                style="width: 20px; height: 20px; margin-right: 5px" />
-              Furniture & Decor
-            </li>
-          </a>
-
-          <a href="#">
-            <li>
-              <img src="https://icons.veryicon.com/png/o/internet--web/line-style-digital-correlation/mobile-to-tv.png"
-                alt="" style="
-                    width: 20px;
-                    height: 20px;
-                    margin-right: 5px;
-                    background-color: transparent;
-                  " />
-              Electronics & Appliances
-            </li>
-          </a>
-
-          <a href="#">
-            <li>
-              <img src="https://toppng.com/uploads/preview/home-icon-home-icon-svg-free-11563371772ani6qcgief.png"
-                alt="" style="width: 20px; height: 20px; margin-right: 5px" />
-              Homes
-            </li>
-          </a>
-
-          <a href="#">
-            <li>
-              <img src="https://cdn-icons-png.flaticon.com/512/2329/2329038.png" alt=""
-                style="width: 20px; height: 20px; margin-right: 5px" />
-              Co-working Spaces
-            </li>
-          </a>
-
-          <a href="#">
-            <li>
-              <img src="https://www.pngfind.com/pngs/m/109-1094000_smartphone-tablet-icon-mobile-and-tablet-icon-hd.png"
-                alt="" style="width: 20px; height: 20px; margin-right: 5px" />
-              Mobile & Tablets
-            </li>
-          </a>
-
-          <a href="#">
-            <li>
-              <img
-                src="https://www.clipartmax.com/png/small/314-3144540_download-rocking-horse-silhouette-clipart-rocking-horse-toy-icon.png"
-                alt="" style="width: 20px; height: 20px; margin-right: 5px" />
-              Kids & Toys
-            </li>
-          </a>
-        </ul>
-      </div>
-      <a href="index.html"><img src="https://i.ibb.co/vV6BL8R/Skin-Verse-1.png" alt="" id="logo" /></a>
+      .nav>div{
+        background-color: rgb(48, 142, 173);
+        width: 120px;
+        height: 40px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       
 
-      <img src="https://www.svgrepo.com/show/26529/location-pin.svg" alt="" style="
-            height: 20px;
-            width: 20px;
-            margin-top: 45px;
-            margin-left: 55px;
-            cursor: pointer;
-          " />
+      }
+      #cart-container>div>div button{
+        background-color: #333;
+        color: #fff;
+        display: block;
+        width: 25px;
+        height: 100%;
+        text-align: center;
+        /* padding:10px; */
+        font-size: 24px;
+        border-radius: 5px;
+        transition: transform 0.3s;
+      }
+      #cart-container>div>div button:hover{
+        transform: scale(1.2);
 
-      <select name="location" id="location">
-        <option value="all india">All India</option>
-        <option value="hyderabad">Hyderabad</option>
-        <option value="kolkata">Kolkata</option>
-        <option value="bangalore">Bangalore</option>
-        <option value="chennai">Chennai</option>
-        <option value="jaipur">Jaipur</option>
-        <option value="delhi">Delhi</option>
-        <option value="mumbai">Mumbai</option>
-        <option value="pune">Pune</option>
-        <option value="ahmedabad">Ahmedabad</option>
-        <option value="noida">Noida</option>
-      </select>
+      }
+       #cart-container>div>div{
+        width:80%;
+        /* width: 120px; */
+        margin: auto;
+        display: flex;
+        margin-top: 10px;
+        justify-content: space-around;
+        font-size: 24px;
+        /* border: 1px solid blue; */
+       }
+      #top{
+        padding-left: 1%;
+        display: flex;
+        justify-content: space-between;
+        font-family: poppins;
+        font-size: 12px;
+      }
+      
+    
+      #buy,#coupne{
+        background-color: #333;
+        width: 150px;
+        height: 40px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        border: none;
+        font-size: 14px;
+       margin-right: 1.5%;
+        /* border: 1px solid red; */
+        transition: transform 0.3s;
+        font-family: montserrat;
 
-      <div id="search" style="height:40%; width:35%;margin-top: 2%;">
-        <input type="text" placeholder="Search in All India..." id="searchBar" />
-        <button id="searchBtn">
-          <img src="https://icon-library.com/images/search-button-icon-png/search-button-icon-png-14.jpg" alt=""
-            style="height: 20px; width: 20px" />
-        </button>
+      }
+      #buy:hover{
+        transform: scale(1.1);
+      }
+      #coupne:hover{
+        transform: scale(1.1);
+      }
+    #h1{
+   font-family: montserrat;
+   font-size: 35px;
+    }
+    #cart-container>div>div #remove{
+      background-color: #333;
+      color: #fff;
+      font-size: 16px;
+      font-family: montserrat;
+      border-radius: 5px;
+      width: 100px;
+      transition: transform 0.3s;
+      height: 32px;
+      /* margin-top: 10px; */
+    }
+    #remove:hover{
+      transform: scale(1.2);
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="upperNav">
+        <div>
+          <a href="#"><img src="https://static.thenounproject.com/png/5015922-200.png" alt=""
+              style="width: 20px; height: 20px; margin-right: 5px" />
+            For Business</a>
+  
+          <a href="#"><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlgHtcbzB91mS34aEhKLrPEVZB6kYb9V1VQA&usqp=CAU"
+              alt="" style="width: 20px; height: 20px; margin-right: 5px" />
+            Download The App</a>
+        </div>
+  
+        <div>
+          <a href="#"><img src="http://cdn.onlinewebfonts.com/svg/img_456370.png" alt=""
+              style="width: 20px; height: 20px; margin-right: 5px" />
+            Deals</a>
+  
+          <a href="visit_store.html"><img src="https://i.pinimg.com/564x/db/2c/40/db2c407b44a5802ecadc05c1e3fc266d.jpg" alt=""
+              style="width: 20px; height: 20px; margin-right: 5px" />
+            Visit Our Store</a>
+  
+          <a href="#"><img
+              src="https://www.clipartsmania.com/gif/currency/india-rupee-symbol-gif-animation-black.gif"
+              alt="" style="width: 20px; height: 20px; margin-right: 5px" />
+            Discount on Premium Ads</a>
+  
+          <a href="#"><img src="http://cdn.onlinewebfonts.com/svg/img_297674.png" alt=""
+              style="width: 20px; height: 20px; margin-right: 5px" />
+            Cart</a>
+  
+          <a href="#"><img src="https://www.svgrepo.com/show/151296/live-chat.svg" alt=""
+              style="width: 20px; height: 20px; margin-right: 5px" />
+            NXT</a>
+        </div>
       </div>
-      <a href="login.html"><img src="http://cdn.onlinewebfonts.com/svg/img_301872.png" alt="" style="
-        width: 30px;
-        height: 30px;
-        margin-top: 40px;
-        margin-left: 50px;
-        text-decoration: none;
-        color: black;
-      " /></a>
-      <a href="login.html" style="text-decoration: none; color: black;"> <p id="LName">Login/Register</p></a>
-      <button id="postingbtn"><a href="Adcategory.html">Post Free Ads</a></button>
-    </nav>
-  </header>
-  <hr />
-    <div class="nav1">
-        <p><span>Home</span>/<span>Bazaar</span>/<span>Home & Lifestyle</span>/<span>Home - Office Furniture</span></p>
-        <h1 style="font-family: montserrat;">Used / Second Hand Home - Office Furniture in India</h1>
-        <p>Shop for used, second hand and pre-owned furnitures online at Quikr. Shop from wide collection of Sofas, Dining Table, Bed sets, Almirah, Recliners, Wardrobes, Shoe Racks,<br> Office Tables and more</p>
-       </div>
+  
+      <nav role="navigation" id="navbar">
+        <div id="menuToggle">
+          <input type="checkbox" id="hamburger-menu-button" />
+  
+          <span></span>
+          <span></span>
+          <span></span>
+  
+          <ul id="menu">
+           <img src="https://i.ibb.co/0JGD23q/Refurbay-TP.png" alt="logo" style="width: 170px; height: 170px" /> 
+            <hr />
+            <a href="login.html">
+              <li>
+                <img
+                  src="https://mpng.subpng.com/20180925/txu/kisspng-computer-icons-clip-art-login-portable-network-gra-user-login-person-man-enter-svg-png-icon-free-down-5baa7bca379ab4.6410690315378994662278.jpg"
+                  alt="" style="width: 20px; height: 20px; margin-right: 5px" />
+                  Login/Register
+              </li>
+            </a>
+            <hr />
+  
+            <a href="#">
+              <li>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/User_font_awesome.svg/1024px-User_font_awesome.svg.png"
+                  alt="" style="width: 20px; height: 20px; margin-right: 5px" />
+                My Account
+              </li>
+            </a>
+  
+            <a href="#">
+              <li>
+                <img src="https://toppng.com/uploads/preview/payment-history-icon-11553476397wfa17tvwpv.png" alt="" style="
+                      width: 20px;
+                      height: 20px;
+                      background-color: transparent;
+                      margin-right: 5px;
+                    " />
+                Orders & Payments
+              </li>
+            </a>
+  
+            <a href="#">
+              <li>
+                <img src="https://www.svgrepo.com/show/12172/smartphone-ad.svg" alt="" style="
+                      width: 25px;
+                      height: 25px;
+                      background-color: transparent;
+                      margin-right: 5px;
+                    " />
+                My Ads
+              </li>
+            </a>
+            <hr />
+  
+            <h4 style="color: grey">CATEGORIES</h4>
+  
+            <a href="#">
+              <li>
+                <img src="http://cdn.onlinewebfonts.com/svg/img_452750.png" alt=""
+                  style="width: 20px; height: 20px; margin-right: 5px" />
+                Services
+              </li>
+            </a>
+  
+            <a href="#">
+              <li>
+                <img src="https://static.thenounproject.com/png/5015922-200.png" alt=""
+                  style="width: 20px; height: 20px; margin-right: 5px" />
+                Jobs
+              </li>
+            </a>
+  
+            <a href="#">
+              <li>
+                <img
+                  src="https://toppng.com/uploads/preview/font-car-svg-png-icon-free-download-icon-car-11563232486o4ytppwzhy.png"
+                  alt="" style="width: 20px; height: 20px; margin-right: 5px" />
+                Cars
+              </li>
+            </a>
+  
+            <a href="#">
+              <li>
+                <img src="https://freesvg.org/img/motorcycleicon.png" alt=""
+                  style="width: 20px; height: 20px; margin-right: 5px" />
+                Bikes
+              </li>
+            </a>
+  
+            <a href="#">
+              <li>
+                <img src="https://www.svgrepo.com/show/60919/sofa.svg" alt=""
+                  style="width: 20px; height: 20px; margin-right: 5px" />
+                Furniture & Decor
+              </li>
+            </a>
+  
+            <a href="#">
+              <li>
+                <img src="https://icons.veryicon.com/png/o/internet--web/line-style-digital-correlation/mobile-to-tv.png"
+                  alt="" style="
+                      width: 20px;
+                      height: 20px;
+                      margin-right: 5px;
+                      background-color: transparent;
+                    " />
+                Electronics & Appliances
+              </li>
+            </a>
+  
+            <a href="#">
+              <li>
+                <img src="https://toppng.com/uploads/preview/home-icon-home-icon-svg-free-11563371772ani6qcgief.png"
+                  alt="" style="width: 20px; height: 20px; margin-right: 5px" />
+                Homes
+              </li>
+            </a>
+  
+            <a href="#">
+              <li>
+                <img src="https://cdn-icons-png.flaticon.com/512/2329/2329038.png" alt=""
+                  style="width: 20px; height: 20px; margin-right: 5px" />
+                Co-working Spaces
+              </li>
+            </a>
+  
+            <a href="#">
+              <li>
+                <img src="https://www.pngfind.com/pngs/m/109-1094000_smartphone-tablet-icon-mobile-and-tablet-icon-hd.png"
+                  alt="" style="width: 20px; height: 20px; margin-right: 5px" />
+                Mobile & Tablets
+              </li>
+            </a>
+  
+            <a href="#">
+              <li>
+                <img
+                  src="https://www.clipartmax.com/png/small/314-3144540_download-rocking-horse-silhouette-clipart-rocking-horse-toy-icon.png"
+                  alt="" style="width: 20px; height: 20px; margin-right: 5px" />
+                Kids & Toys
+              </li>
+            </a>
+          </ul>
+        </div>
+       <a href="./index.html"><img src="https://i.ibb.co/vV6BL8R/Skin-Verse-1.png" alt="" id="logo" /></a> 
+  
+        <img src="https://www.svgrepo.com/show/26529/location-pin.svg" alt="" style="
+              height: 20px;
+              width: 20px;
+              margin-top: 45px;
+              margin-left: 55px;
+              cursor: pointer;
+            " />
+  
+        <select name="location" id="location">
+          <option value="all india">All India</option>
+          <option value="hyderabad">Hyderabad</option>
+          <option value="kolkata">Kolkata</option>
+          <option value="bangalore">Bangalore</option>
+          <option value="chennai">Chennai</option>
+          <option value="jaipur">Jaipur</option>
+          <option value="delhi">Delhi</option>
+          <option value="mumbai">Mumbai</option>
+          <option value="pune">Pune</option>
+          <option value="ahmedabad">Ahmedabad</option>
+          <option value="noida">Noida</option>
+        </select>
+  
+        <div id="search" style="height:40%; width:35%;margin-top: 2%;">
+          <input type="text" placeholder="Search in All India..." id="searchBar" />
+          <button id="searchBtn">
+            <img src="https://icon-library.com/images/search-button-icon-png/search-button-icon-png-14.jpg" alt=""
+              style="height: 20px; width: 20px" />
+          </button>
+        </div>
+        <a href="login.html"><img src="http://cdn.onlinewebfonts.com/svg/img_301872.png" alt="" style="
+          width: 30px;
+          height: 30px;
+          margin-top: 40px;
+          margin-left: 50px;
+          text-decoration: none;
+          color: black;
+        " /></a>
+        <a href="login.html" style="text-decoration: none; color: black;"> <p id="LName">Login/Register</p></a>
+  
+        <button id="postingbtn"><a href="Adcategory.html">Post Free Ads</a></button>
+      </nav>
+    </header>
     
-   <div id="function">
+    <div class="nav">
+     <h1 id="h1">Shopping Bag</h1>
+     
+    </div>
+    <div id="top">
+      <h1>Total products :- <span id="item">0</span></h1>
+      <h1 id="total">Your Total cart Price is:- ₹ <span id="cart-total">0</span></h1>
+      <button id="coupne">Apply Coupon</button>
+      <button id="buy">Buy Now</button>
+    </div>
     
-     <label>Sort by :- <span id="l2h"> Price :-Low to High</span>  / <span id="h2l">Price :- High to Low</span></label>
-   </div>
-   <div id="cloth-container"></div>
-
-    <div id="pagination-wrapper"></div>
+    <div id="cart-container">
+      <!-- Here Append All the cart Products  -->
+    </div>
     <br>
     <br>
     <footer>
@@ -692,47 +719,21 @@
         </div>
       </div>
     </footer>
-</body>
-<script>
-  
-    let container=document.getElementById("cloth-container")
-    let filterSelect=document.getElementById("filter");
-    let pagination=document.getElementById("pagination-wrapper")
- let l2h=document.getElementById("l2h");
- let cloth=[]
- l2h.addEventListener("click",()=>{
-    let sort=cloth.sort((a,b)=>(a.price)-(b.price));
-    shopdata(sort)
- })
- let h2l=document.getElementById("h2l")
- h2l.addEventListener("click",()=>{
-    let sort=cloth.sort((a,b)=>(b.price)-(a.price));
-    shopdata(sort)
- })
-    
-
-
-
-    let arr=[];
-    
-    fetch("https://my-server-ten.vercel.app/Furniture")
-    .then((res)=>{
-      return res.json()
-    })
-    .then((data)=>{
-      shopdata(data)
-       cloth=data
-    })
-  
-
+  </body>
+  <script>
+    // Write all necessery JS here
+    let container=document.getElementById("cart-container")
+    let cardata=JSON.parse(localStorage.getItem("cart"))||[]
+    let lsdata=JSON.parse(localStorage.getItem("unknown"))||[]
+    let price1=document.getElementById("cart-total");
+    console.log(cardata)
+   console.log(cardata)
     function shopdata(data){
       container.innerHTML=null
-      data.forEach((element)=>{
+      data.forEach((element,index)=>{
         let card=document.createElement("div");
         let img=document.createElement("img");
         img.setAttribute("src",element.image);
-        
-
         setInterval(()=>{
           img.onmouseover=function(){
           img.setAttribute("src",element.image2)
@@ -742,105 +743,147 @@
         }
 
         },2000)
-        // clearInterval(id)
-
         let brand=document.createElement("h2");
         brand.innerText=element.title;
        
         let price=document.createElement("p")
-        price.innerText="$"+" "+element.price;
-        let category=document.createElement("p")
-        category.innerText=element.description
-        let button=document.createElement("button");
-        button.innerText="Add To Cart"
-        let btn=document.createElement("button");
-        btn.innerText="View";
-        let dbt=document.createElement("div");
-        dbt.append(button,btn)
-        dbt.setAttribute("id","btn")
-        button.addEventListener("click",()=>{
-          let cardata=JSON.parse(localStorage.getItem("cart"))||[]
-          // if(cardata==null)cardata=[];
-          let ready=false
-          for(let i=0;i<cardata.length;i++){
-            if(cardata[i].image===element.image){
-              ready=true;
-              break
+        price.innerText="₹"+" "+element.price;
+       
+        
+        let increment=document.createElement("button")
+        increment.innerText="+";
+        let quantity=document.createElement("span")
+        quantity.innerText=element.quantity
+        let decrement=document.createElement("button")
+        decrement.innerText="-"
+        let d=document.createElement("div")
+        
+        increment.addEventListener("click",()=>{
+          
+          quantity.innerText++
+          element.quantity++;
+          cardata[index] = element;
+          localStorage.setItem("cart",JSON.stringify(cardata));
+          shopdata(cardata);
 
-            }
-          }
-          if(ready==true){
-            alert("Product Already in Cart")
-          }else{
-            arr.push({...element,quantity:1});
-            console.log(cardata)
-          localStorage.setItem("cart",JSON.stringify(arr));
-          alert("Product Added To Cart")
-
-          }
-         
-
-
+        });
+        decrement.addEventListener("click",()=>{
+        if(element.quantity > 1){
+            quantity.innerText--
+            element.quantity--;
+            cardata[index] = element;
+            localStorage.setItem("cart",JSON.stringify(cardata));
+            shopdata(cardata)
+        }
         })
-        card.append(img,brand,price,category,dbt);
+       
+        let remove=document.createElement("button");
+        d.append(decrement,quantity,increment,remove)
+        remove.setAttribute("id","remove")
+        remove.innerText="Remove"
+       remove.addEventListener("click",()=>{
+        lsdata.push(element);
+        
+        localStorage.setItem("unknown",JSON.stringify(lsdata));
+        cardata.splice(index,1);
+        localStorage.setItem("cart",JSON.stringify(cardata));
+        document.getElementById("item").innerText=cardata.length;
+        if(cardata.length===0){
+    price1.innerText=0
+   }
+        shopdata(cardata)
+       })
+        
+     
+        let total=0;
+        cardata.forEach((element,index)=>{
+          
+          total+=parseInt((element.price))*element.quantity
+          price1.innerText= total;
+        })
+       
+        
+
+
+       
+        card.append(img,brand,price,d);
         container.append(card)
 
 
       })
     }
+    shopdata(cardata)
+    let to=document.getElementById("item")
+    to.innerText=cardata.length;
+    document.getElementById("buy").addEventListener("click",()=>{
+     
+      window.location.pathname="address.html"
+      localStorage.removeItem("cart")
+    })
+    let coupon=document.getElementById("coupne");
+    let n=1
+    coupon.addEventListener("click",()=>{
+      
+      if(price1.innerText>=100000 ){
+        if(n==1){
+          price1.innerText=Number(Math.ceil(price1.innerText*0.90));
+        n=2
+        }else{
+          alert("Coupon used only once at a time")
+        }
+       
+       
+      }else{
+        let x=100000-Number(price1.innerText);
+        alert(`you have to shop more for get coupon that is ${x}`)
+        window.location="index.html"
+      }
+    })
 
-</script>
 
- <!-- Do not touch this code !!!!!!!!!! -->
- <script>
-  let Display_name = document.getElementById("LName");
-  let userDname = JSON.parse(localStorage.getItem("display-name"));
-  Display_name.textContent = userDname;
-</script>
-<!-- Do not touch this code !!!!!!!!!! -->
 
-<script>
-  let searchBar = document.getElementById("searchBar");
-  let searchBtn = document.getElementById("searchBtn");
+  </script>
+  <script>
+    let searchBar = document.getElementById("searchBar");
+    let searchBtn = document.getElementById("searchBtn");
 
-  searchBtn.addEventListener("click",()=>{
-  if(searchBar.value == "mobile"){
-    window.location.href="mobile.html";
-  }
-  else if(searchBar.value == "furniture"){
-    window.location.href="furniture.html";
-  }
-  else if(searchBar.value == "Furniture"){
-    window.location.href="furniture.html";
-  }
-  else if(searchBar.value == "Furnitures"){
-    window.location.href="furniture.html";
-  }
-  else if(searchBar.value == "furnitures"){
-    window.location.href="furniture.html";
-  }
-  else if(searchBar.value == "sofa set"){
-    window.location.href="furniture.html";
-  }
-  else if(searchBar.value == "Sofa set"){
-    window.location.href="furniture.html";
-  }
-  else if(searchBar.value == "sofa sets"){
-    window.location.href="furniture.html";
-  }
-  else if(searchBar.value == "Sofa sets"){
-    window.location.href="furniture.html";
-  }
-  else if(searchBar.value == "Mobiles"){
-    window.location.href="mobile.html";
-  }
-  else if(searchBar.value == "mobiles"){
-    window.location.href="mobile.html";
-  }
-  else{
-    window.location.href="none.html";
-  }
-  })
-</script>
-
+    searchBtn.addEventListener("click",()=>{
+    if(searchBar.value == "mobile"){
+      window.location.href="mobile.html";
+    }
+    else if(searchBar.value == "furniture"){
+      window.location.href="furniture.html";
+    }
+    else if(searchBar.value == "Furniture"){
+      window.location.href="furniture.html";
+    }
+    else if(searchBar.value == "Furnitures"){
+      window.location.href="furniture.html";
+    }
+    else if(searchBar.value == "furnitures"){
+      window.location.href="furniture.html";
+    }
+    else if(searchBar.value == "sofa set"){
+      window.location.href="furniture.html";
+    }
+    else if(searchBar.value == "Sofa set"){
+      window.location.href="furniture.html";
+    }
+    else if(searchBar.value == "sofa sets"){
+      window.location.href="furniture.html";
+    }
+    else if(searchBar.value == "Sofa sets"){
+      window.location.href="furniture.html";
+    }
+    else if(searchBar.value == "Mobiles"){
+      window.location.href="mobile.html";
+    }
+    else if(searchBar.value == "mobiles"){
+      window.location.href="mobile.html";
+    }
+    else{
+      window.location.href="none.html";
+    }
+    })
+  </script>
 </html>

@@ -771,11 +771,11 @@
         dbt.append(button,btn)
         dbt.setAttribute("id","btn")
         button.addEventListener("click",()=>{
-          let cardata=JSON.parse(localStorage.getItem("cart"))
-          if(cardata==null)cardata=[];
+          let cardata=JSON.parse(localStorage.getItem("cart"))||[]
+          
           let ready=false
           for(let i=0;i<cardata.length;i++){
-            if(cardata[i].img===element.img){
+            if(cardata[i].image===element.image){
               ready=true;
               break
 
