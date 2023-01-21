@@ -29,50 +29,50 @@
 
 <body>
 
-  <div class="area" >
+  <div class="area">
     <ul class="circles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
     </ul>
-</div >
+  </div>
 
   <!-- <div class="mainbox">
     <div id="alert">
       <h3>Please Login/SignUp Here!</h3>
     </div> -->
-    <div class="formbox">
-      <div class="buttonbox">
-        <div id="btn"></div>
-        <button type="button" class="toggle-btn" onclick="login()">Log In</button>
-        <button type="button" class="toggle-btn" onclick="register()">Register</button>
-      </div>
-      <div class="icon">
-        <img src="fb.png" alt="Error">
-        <img src="tw.png" alt="Error">
-        <img src="gp.png" alt="Error">
-      </div>
-      <form id="login" class="input-grp">
-        <input type="text" id="namee" class="input-space" placeholder="User Id" required>
-        <input type="password" id="passwordd" class="input-space" placeholder="Enter Password" required>
-        <input type="checkbox" class="check-box"><span>Remember Password</span>
-        <button type="submit" class="submit-btn">Log In</button>
-      </form>
-      <form id="register" class="input-grp">
-        <input type="text" id="name" class="input-space" placeholder="User Id" required>
-        <input type="email" id="email" class="input-space" placeholder="Email Id" required>
-        <input type="password" id="password" class="input-space" placeholder="Enter Password" required>
-        <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
-        <button type="submit" class="submit-btn">Register</button>
-      </form>
+  <div class="formbox">
+    <div class="buttonbox">
+      <div id="btn"></div>
+      <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+      <button type="button" class="toggle-btn" onclick="register()">Register</button>
     </div>
+    <div class="icon">
+      <img src="fb.png" alt="Error">
+      <img src="tw.png" alt="Error">
+      <img src="gp.png" alt="Error">
+    </div>
+    <form id="login" class="input-grp">
+      <input type="email" id="mail" class="input-space" placeholder="Enter Your Email" required>
+      <input type="password" id="passwordd" class="input-space" placeholder="Enter Password" required>
+      <input type="checkbox" class="check-box"><span>Remember Password</span>
+      <button type="submit" class="submit-btn">Log In</button>
+    </form>
+    <form id="register" class="input-grp">
+      <input type="text" id="name" class="input-space" placeholder="User Id" required>
+      <input type="email" id="email" class="input-space" placeholder="Email Id" required>
+      <input type="password" id="password" class="input-space" placeholder="Enter Password" required>
+      <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+      <button type="submit" class="submit-btn">Register</button>
+    </form>
+  </div>
   </div>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script>
@@ -92,10 +92,11 @@
       z.style.left = "0px";
     }
 
+    //signup page;
 
     let form = document.getElementById("register");
 
-    let formData = JSON.parse(localStorage.getItem("skinstore-data")) || [];
+    let formData = JSON.parse(localStorage.getItem("refurbay-data")) || [];
 
     form.addEventListener("submit", ops);
 
@@ -103,23 +104,37 @@
       e.preventDefault();
 
       let obj = {
-
         Name: form.name.value,
-        Email: form.email.value,
-        Pass: form.password.value
-
+        email: form.email.value,
+        password: form.password.value
       }
-      formData.push(obj);
-
-      if (formData.Name == "" && formData.Email == "" && formData.Pass == "") {
-        alert("Fill the crediantials");
+      let isPresent = false;
+      for(let el of formData){
+        if(el.email==obj.email){
+          isPresent = true
+        }
       }
-      else {
-        localStorage.setItem("skinstore-data", JSON.stringify(formData));
+      if(isPresent){
+        alert("already")
+      }else{
+        formData.push(obj);
+        localStorage.setItem("refurbay-data", JSON.stringify(formData));
+        Swal.fire({
+            position: "centre",
+            icon: "success",
+            title: "Register Successfully.",
+            showConfirmButton: false,
+            timer: 1500,
+          });
+          setTimeout(() => {
+            window.location.href = "login.html"
+          }, 2500)
       }
     }
 
-    let formData1 = JSON.parse(localStorage.getItem("skinstore-data")) || [];
+    // sing in code 
+
+    let formData1 = JSON.parse(localStorage.getItem("refurbay-data")) || [];
     let form1 = document.getElementById("login");
 
     form1.addEventListener("submit", up);
@@ -127,10 +142,16 @@
     function up(e) {
       e.preventDefault();
 
-      formData1.forEach(element => {
-        console.log(element);
-        if (element.Name == form1.namee.value && element.Pass == form1.passwordd.value) {
-          // document.getElementById("alert").textContent = "Signed in Successfully 🎉"
+      let obj ={
+        email: form1.mail.value,
+        password: form1.passwordd.value
+      }
+
+      for(let i = 0; i<formData1.length; i++) {
+        let element = formData1[i];
+        console.log(obj.email)
+        if (element.email == obj.email && element.password == obj.password) {
+          localStorage.setItem("display-name",JSON.stringify(element.Name))
           Swal.fire({
             position: "centre",
             icon: "success",
@@ -139,18 +160,17 @@
             timer: 1500,
           });
           setTimeout(() => {
-            window.location.href = "index.html?name=" + element.Name;
+            window.location.href = "index.html"
           }, 2500)
+          break;
         }
-        else {
-          // document.getElementById("alert").textContent = " Opps! Invalid Credentials ❌"
+        else if(i==formData1.length-1){
           Swal.fire({
-            position: "centre",
             title: 'Oops...',
-            text: 'Invalid Credentials!',
+            text: 'Wrong Credentials!'
           })
         }
-      });
+      }
     }
 
   </script>
