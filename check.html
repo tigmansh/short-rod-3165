@@ -44,7 +44,7 @@
   #main {
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 60%;
     height: 490px;
     /* border: 1px solid red; */
     justify-content: space-between;
@@ -763,16 +763,16 @@
   btn.addEventListener("click", () => {
     let a = `${Math.floor(Math.random() * 9000 + 1000)}`
 
-    // alert(`OTP for payment verification ${a}`)
-    Swal.fire({
-      title: `OTP for payment verification ${a}`,
-      showClass: {
-        popup: 'animate__animated animate__fadeInDown'
-      },
-      hideClass: {
-        popup: 'animate__animated animate__fadeOutUp'
-      }
-    })
+    alert(`OTP for payment verification ${a}`)
+    // Swal.fire({
+    //   title: `OTP for payment verification ${a}`,
+    //   showClass: {
+    //     popup: 'animate__animated animate__fadeInDown'
+    //   },
+    //   hideClass: {
+    //     popup: 'animate__animated animate__fadeOutUp'
+    //   }
+    // })
 
 
 
@@ -784,7 +784,7 @@
       Swal.fire({
             position: "centre",
             icon: "success",
-            title: "Product Added to Cart.",
+            title: "Payment Successful.",
             showConfirmButton: false,
             timer: 1500,
           });
@@ -792,7 +792,7 @@
       // alert("Thanks for visiting RE-Ferbay.com")
       // window.location = "./index.html"
       Swal.fire({
-      title: 'Thanks for Shopping with ReFerbay',
+      title: 'Thanks for Shopping with ReFurbay',
       showClass: {
         popup: 'animate__animated animate__fadeInDown'
       },
@@ -801,7 +801,7 @@
       }
     })
           setTimeout(()=>{
-            window.location.href="furniture.html"
+            window.location.href="index.html"
           },3000)
     }
 
