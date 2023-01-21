@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@600&family=Poppins&family=Quicksand&display=swap');
+
 body {
     margin: 0px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.25;
     /* color: rgb(51, 51, 51); */
+    background-color: white;
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -16,16 +19,17 @@ html {
 
 .main_section {
     /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
     display: flex;
     width: 80%;
     margin-top: 2%;
     margin-left: 10%;
     /* margin: auto; */
     justify-content: space-between;
+    padding-bottom: 20px;
 }
 
-footer .id ul {
+ .id ul {
     list-style: none;
     display: flex;
     gap: 0.5em;
@@ -33,19 +37,24 @@ footer .id ul {
     margin: 0;
 }
 
-footer .id ul li::after {
+.id ul li::after {
     content: " |";
 }
 
 .btnn {
+    
     display: flex;
     justify-content: space-between;
-    width: 73%;
+    width: 67%;
     margin: auto;
+    /* border: 1px solid red; */
     padding-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .btnn button {
+    font-family: montserrat;
+    transition: transform .1s;
     padding: 0px 51px;
     border-radius: 4px;
     color: white;
@@ -53,6 +62,9 @@ footer .id ul li::after {
     border: none;
     box-shadow: rgba(171, 171, 171, 0.5) 0px 2px 4px 0px;
     height: 52px;
+}
+.btnn button:hover{
+    transform: scale(1.2);
 }
 
 .him {
@@ -74,6 +86,10 @@ footer .id ul li::after {
 
 .second {
     /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    /* border: 3px slid green; */
+    /* background-color: green; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px 10px;
     position:-webkit-sticky;
     margin: 0px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -108,10 +124,15 @@ h1 {
     color: rgb(51, 51, 51);
     margin: 16px 0px 12px;
 }
+.id h2{
+    margin:0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
 
 h2 {
     color: rgb(0, 131, 202);
-    margin-right: 10px;
+    margin: 10px;
 }
 
 a {
@@ -127,6 +148,7 @@ a {
 
 .img div {
     padding-top: 10px;
+    
 }
 
 .cCTsnx {
@@ -152,7 +174,16 @@ ul {
     width: 61%;
     margin-right: 19px;
     padding: 0px 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
+}
+.sofa img{
+    padding-top: 17px;
+    width: 80%;
+}
+.sofa{
+    width: 80%;
+    margin: auto;
 }
 
 /* details part */
