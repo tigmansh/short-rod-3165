@@ -39,7 +39,7 @@
                 alt="" style="width: 20px; height: 20px; margin-right: 5px" />
               Discount on Premium Ads</a>
     
-            <a href="#"><img src="http://cdn.onlinewebfonts.com/svg/img_297674.png" alt=""
+            <a href="shopping-cart.html"><img src="http://cdn.onlinewebfonts.com/svg/img_297674.png" alt=""
                 style="width: 20px; height: 20px; margin-right: 5px" />
               Cart</a>
     
@@ -60,14 +60,14 @@
             <ul id="menu">
               <img src="https://i.ibb.co/0JGD23q/Refurbay-TP.png" alt="logo" style="width: 170px; height: 170px" />
               <hr />
-              <a href="login.html">
-                <li>
+              
+                <li id="logo1">
                   <img
                     src="https://mpng.subpng.com/20180925/txu/kisspng-computer-icons-clip-art-login-portable-network-gra-user-login-person-man-enter-svg-png-icon-free-down-5baa7bca379ab4.6410690315378994662278.jpg"
                     alt="" style="width: 20px; height: 20px; margin-right: 5px" />
-                    Login/Register
+                    Logout
                 </li>
-              </a>
+
               <hr />
     
               <a href="#">
@@ -244,9 +244,8 @@
     <!-- main section of sponser -->
     <div class="main_section">
         <div class="first_part">
-            <div>
-                <img src="https://teja9.kuikr.com/i4/20220723/8431451394-Brand-New-6-6ft-Sofa-cum-bed-direct-from-factory
-            -VB201705171774173-ak_WBP1838036652-1658557796.png" alt="">
+            <div class="sofa">
+                <img src="https://m.media-amazon.com/images/I/51EcU3whBIL._AC_UL480_FMwebp_QL65_.jpg" alt="">
             </div>
             <div id="Ad_Details" class="sc">
                 <h2 class="sc-dxhf6u-0 fOgmnl vap__subtitle">Ad Details</h2>
@@ -340,8 +339,8 @@
                 <li class="imk">ENGINEERED WOOD (PLY)</li>
             </ul>
 
-            <h1> Brand New 6*6ft Sofa cum bed direct from factory</h1>
-            <footer>
+            <h1> Brand New Reddison Sofa</h1>
+          
                 <div class="id">
                     <ul>
                         <li>
@@ -351,11 +350,11 @@
                             Posted 6 Months Ago
                         </span>
                     </ul>
-            </footer>
-            <h2>$2100</h2>
+                    
+            <h2> ₹ 2100</h2>
             <div class="btnn">
-                <div> <button>CALL</button></div>
-                <div> <button class="btnn1">BUY</button></div>
+                <div> <button class="btn1">CALL</button></div>
+                <div> <button class="btn2">BUY</button></div>
             </div>
 
             <div class="img">
@@ -716,6 +715,14 @@
    
 </body>
 <script src="./slideshow.js"></script>
+
+ <!-- Do not touch this code !!!!!!!!!! -->
+ <script>
+  let Display_name = document.getElementById("LName");
+  let userDname = JSON.parse(localStorage.getItem("display-name"));
+  Display_name.textContent = userDname;
+</script>
+<!-- Do not touch this code !!!!!!!!!! -->
 
 <script>
   let searchBar = document.getElementById("searchBar");

@@ -164,7 +164,7 @@
               alt="" style="width: 20px; height: 20px; margin-right: 5px" />
             Discount on Premium Ads</a>
   
-          <a href="#"><img src="http://cdn.onlinewebfonts.com/svg/img_297674.png" alt=""
+          <a href="shopping-cart.html"><img src="http://cdn.onlinewebfonts.com/svg/img_297674.png" alt=""
               style="width: 20px; height: 20px; margin-right: 5px" />
             Cart</a>
   
@@ -186,11 +186,11 @@
            <img src="https://i.ibb.co/0JGD23q/Refurbay-TP.png" alt="logo" style="width: 170px; height: 170px" /> 
             <hr />
             <a href="login.html">
-              <li>
+              <li id="logo1">
                 <img
                   src="https://mpng.subpng.com/20180925/txu/kisspng-computer-icons-clip-art-login-portable-network-gra-user-login-person-man-enter-svg-png-icon-free-down-5baa7bca379ab4.6410690315378994662278.jpg"
                   alt="" style="width: 20px; height: 20px; margin-right: 5px" />
-                  Login/Register
+                  Logout
               </li>
             </a>
             <hr />
@@ -372,7 +372,7 @@
       <h1>Total products :- <span id="item">0</span></h1>
       <h1 id="total">Your Total cart Price is:- ₹ <span id="cart-total">0</span></h1>
       <button id="coupne">Apply Coupon</button>
-      <button id="buy">Buy Now</button>
+      <a href="address.html" style="text-decoration: none;"><button id="buy">Buy Now</button></a>
     </div>
     
     <div id="cart-container">
@@ -720,6 +720,7 @@
       </div>
     </footer>
   </body>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script>
     // Write all necessery JS here
     let container=document.getElementById("cart-container")
@@ -814,6 +815,7 @@
       })
     }
     shopdata(cardata)
+
   
   
     let to=document.getElementById("item")
@@ -822,6 +824,7 @@
       // let order
       localStorage.setItem("order",JSON.stringify( cardata))
       window.location.pathname="address.html"
+
       localStorage.removeItem("cart")
     })
     let coupon=document.getElementById("coupne");
@@ -832,15 +835,34 @@
         if(n==1){
           price1.innerText=Number(Math.ceil(price1.innerText*0.90));
         n=2
+        Swal.fire({
+            position: "centre",
+            icon: "success",
+            title: "Coupon Applied Successfully",
+            showConfirmButton: false,
+            timer: 1500,
+          });
         }else{
-          alert("Coupon used only once at a time")
+          // alert("Coupon used only once at a time")
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Coupon used only once at a time'
+          })
         }
        
        
       }else{
         let x=100000-Number(price1.innerText);
-        alert(`you have to shop more for get coupon that is ${x}`)
-        window.location="index.html"
+        // alert(`you have to shop more for get coupon that is ${x}`)
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: `you have to shop more for get coupon that is ${x}`
+          })
+          setTimeout(()=>{
+            window.location.href="furniture.html"
+          },3000)
       }
     })
 
@@ -890,4 +912,13 @@
     }
     })
   </script>
+
+   <!-- Do not touch this code !!!!!!!!!! -->
+ <script>
+  let Display_name = document.getElementById("LName");
+  let userDname = JSON.parse(localStorage.getItem("display-name"));
+  Display_name.textContent = userDname;
+</script>
+<!-- Do not touch this code !!!!!!!!!! -->
+
 </html>

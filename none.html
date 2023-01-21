@@ -35,7 +35,7 @@
                 alt="" style="width: 20px; height: 20px; margin-right: 5px" />
               Discount on Premium Ads</a>
     
-            <a href="#"><img src="http://cdn.onlinewebfonts.com/svg/img_297674.png" alt=""
+            <a href="shopping-cart.html"><img src="http://cdn.onlinewebfonts.com/svg/img_297674.png" alt=""
                 style="width: 20px; height: 20px; margin-right: 5px" />
               Cart</a>
     
@@ -57,11 +57,11 @@
               <img src="https://i.ibb.co/0JGD23q/Refurbay-TP.png" alt="logo" style="width: 170px; height: 170px" />
               <hr />
               <a href="login.html">
-                <li>
+                <li id="logo1">
                   <img
                     src="https://mpng.subpng.com/20180925/txu/kisspng-computer-icons-clip-art-login-portable-network-gra-user-login-person-man-enter-svg-png-icon-free-down-5baa7bca379ab4.6410690315378994662278.jpg"
                     alt="" style="width: 20px; height: 20px; margin-right: 5px" />
-                    Login/Register
+                    Logout
                 </li>
               </a>
               <hr />
@@ -579,11 +579,13 @@
       </footer>
 </body>
 
+<!-- Do not touch this code !!!!!!!!!! -->
 <script>
-  let key = new URLSearchParams(document.location.search);
- let name = key.get("name");
- document.getElementById("LName").textContent =name;
+  let Display_name = document.getElementById("LName");
+  let userDname = JSON.parse(localStorage.getItem("display-name"));
+  Display_name.textContent = userDname;
 </script>
+<!-- Do not touch this code !!!!!!!!!! -->
 
 <script>
     let searchBar = document.getElementById("searchBar");
