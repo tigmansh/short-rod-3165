@@ -724,7 +724,7 @@
   <script>
     // Write all necessery JS here
     let container=document.getElementById("cart-container")
-    let cardata=JSON.parse(localStorage.getItem("cart"))||[]
+    let cardata=JSON.parse(localStorage.getItem("cart"))
     let lsdata=JSON.parse(localStorage.getItem("unknown"))||[]
     let price1=document.getElementById("cart-total");
     console.log(cardata)
@@ -787,6 +787,7 @@
         
         localStorage.setItem("unknown",JSON.stringify(lsdata));
         cardata.splice(index,1);
+
         localStorage.setItem("cart",JSON.stringify(cardata));
         document.getElementById("item").innerText=cardata.length;
         if(cardata.length===0){
@@ -814,12 +815,16 @@
       })
     }
     shopdata(cardata)
-    let to =document.getElementById("item")
-    to.textContent=cardata.length;
-    let buy_btn = document.getElementById("buy")
-    buy_btn.addEventListener("click",()=>{
-     
-      window.location.href="address.html";
+
+  
+  
+    let to=document.getElementById("item")
+    to.innerText=cardata.length;
+    document.getElementById("buy").addEventListener("click",()=>{
+      // let order
+      localStorage.setItem("order",JSON.stringify( cardata))
+      window.location.pathname="address.html"
+
       localStorage.removeItem("cart")
     })
     let coupon=document.getElementById("coupne");
