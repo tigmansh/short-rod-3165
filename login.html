@@ -115,7 +115,10 @@
         }
       }
       if(isPresent){
-        alert("already")
+        Swal.fire({
+            title: 'Oops...',
+            text: 'Account Already Exist!'
+          })
       }else{
         formData.push(obj);
         localStorage.setItem("refurbay-data", JSON.stringify(formData));
