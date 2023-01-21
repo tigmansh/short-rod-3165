@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <aside id="sidebar"></aside>
+    
+</body>
+
+<script>
+    let addedProduct = JSON.parse(localStorage.getItem("addData")) || [];
+
+    let tbody = document.getElementById("tbody")
+    
+    showData(addedProduct);
+
+    function showData(arr) {
+        let x = 0;
+        tbody.innerHTML = null;
+        arr.forEach((el,index)=>{
+            let tr = document.createElement("tr");
+
+
+            let id = document.createElement("td");
+            id.innerText = ++x;
+
+            let brand = document.createElement("td")
+            brand.innerText = el.title;
+
+            let img = document.createElement("img");
+            img.setAttribute("src", el.image);
+            img.setAttribute("id", "image")
+
+            let price = document.createElement("td");
+            price.innerText = el.price;
+
+            let Delete = document.createElement("td");
+            Delete.innerText = "DELETE";
+
+            let stock = document.createElement("td");
+            stock.innerText = "In Stock";
+
+
+            Delete.addEventListener("click", function () {
+                arr.splice(index, 1)
+                localStorage.setItem("addData", JSON.stringify(arr));
+                showData(arr);
+            })
+            tr.append(id, brand, img, price, Delete, stock);
+
+            tbody.append(tr);
+
+        });
+    }
+
+
+</script>
+
+</html>
