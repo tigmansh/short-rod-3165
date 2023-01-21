@@ -712,6 +712,18 @@
     </div>
   </footer>
 </body>
+
+
+<!-- Do not touch this code !!!!!!!!!! -->
+
+<script>
+  let Display_name = document.getElementById("LName");
+  let userDname = JSON.parse(localStorage.getItem("display-name"));
+  Display_name.textContent = userDname;
+</script>
+
+<!-- Do not touch this code !!!!!!!!!! -->
+
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
   let name = document.getElementById("name").value;
@@ -839,5 +851,4 @@
     }
   })
 </script>
-
 </html>
