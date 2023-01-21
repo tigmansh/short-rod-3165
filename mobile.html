@@ -340,7 +340,7 @@
             margin-top: 40px;
             margin-left: 50px;
           " />
-      <a href="login.html" style="text-decoration: none; color: black;"> <p>Login/Register</p></a>
+      <a href="login.html" style="text-decoration: none; color: black;"> <p id="LName">Login/Register</p></a>
       <button id="postingbtn"><a href="Adcategory.html">Post Free Ads</a></button>
     </nav>
   </header>
@@ -802,6 +802,14 @@
     }
 
 </script>
+
+<!-- Do not touch this code !!!!!!!!!! -->
+<script>
+  let Display_name = document.getElementById("LName");
+  let userDname = JSON.parse(localStorage.getItem("display-name"));
+  Display_name.textContent = userDname;
+</script>
+<!-- Do not touch this code !!!!!!!!!! -->
 
 <script>
     let searchBar = document.getElementById("searchBar");

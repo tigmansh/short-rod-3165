@@ -791,6 +791,14 @@
 
 </script>
 
+ <!-- Do not touch this code !!!!!!!!!! -->
+ <script>
+  let Display_name = document.getElementById("LName");
+  let userDname = JSON.parse(localStorage.getItem("display-name"));
+  Display_name.textContent = userDname;
+</script>
+<!-- Do not touch this code !!!!!!!!!! -->
+
 <script>
   let searchBar = document.getElementById("searchBar");
   let searchBtn = document.getElementById("searchBtn");

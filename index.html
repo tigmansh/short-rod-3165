@@ -1226,11 +1226,18 @@
   </footer>
 </body>
 
-  <script>
-    let key = new URLSearchParams(document.location.search);
-    let name = key.get("name");
-    document.getElementById("LName").textContent = name;
+   <!-- Do not touch this code !!!!!!!!!! -->
+   <script>
+    let Display_name = document.getElementById("LName");
+    let userDname = JSON.parse(localStorage.getItem("display-name"));
+    Display_name.textContent = userDname;
+    let logo = document.getElementById("logo");
+    logo.addEventListener("click",(e)=>{
+      localStorage.setItem("display-name",JSON.stringify("Login/Register"));
+      Display_name.textContent = "Login/Register"
+    })
   </script>
+ <!-- Do not touch this code !!!!!!!!!! -->
 
 <script>
     let searchBar = document.getElementById("searchBar");
