@@ -719,7 +719,7 @@
 </body>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
-
+ let cardata = JSON.parse(localStorage.getItem("cart")) || []
   let container = document.getElementById("cloth-container")
   let filterSelect = document.getElementById("filter");
   let pagination = document.getElementById("pagination-wrapper")
@@ -738,7 +738,7 @@
 
 
 
-  let arr = [];
+
 
   fetch("https://quikr.onrender.com/Mobile")
     .then((res) => {
@@ -789,7 +789,7 @@
       dbt.append(button, btn)
       dbt.setAttribute("id", "btn")
       button.addEventListener("click", () => {
-        let cardata = JSON.parse(localStorage.getItem("cart")) || []
+       
 
         let ready = false
         for (let i = 0; i < cardata.length; i++) {
@@ -806,9 +806,9 @@
             text: 'Product Already in Cart!'
           })
         } else {
-          arr.push({ ...element, quantity: 1 });
+          cardata.push({ ...element, quantity: 1 });
           console.log(cardata)
-          localStorage.setItem("cart", JSON.stringify(arr));
+          localStorage.setItem("cart", JSON.stringify(cardata));
           Swal.fire({
             position: "centre",
             icon: "success",
