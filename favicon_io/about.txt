@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Noto Sans Imperial Aramaic
+- Font Author: Copyright 2017 Google Inc. All Rights Reserved.
+- Font Source: http://fonts.gstatic.com/s/notosansimperialaramaic/v15/a8IMNpjwKmHXpgXbMIsbTc_kvks91LlLetBr5itQrtdml3YfPNno.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
