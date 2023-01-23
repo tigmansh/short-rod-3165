@@ -34,13 +34,13 @@ Navigation: The website has a clear and intuitive navigation menu that allows us
 **Megamenu Bar**
 ![Screenshot (74)](https://user-images.githubusercontent.com/115489722/213990663-75d68567-2ed8-43aa-bbdf-5eb2d2f89ebd.png)
 
+**Login Page**
+![Screenshot (82)](https://user-images.githubusercontent.com/115489722/213993030-4345c1fa-65bc-4b75-96cf-76309434fc61.png)
+
 Catalog: The product catalog displays all the products available on the website, organized by category. Users can filter the products by price, brand, or other attributes to find the products they are looking for. Each product in the catalog includes an image, a title, a brief description, and the price.
 
 **Catalog**
 ![Screenshot (75)](https://user-images.githubusercontent.com/115489722/213990546-86551185-9e6c-4c34-a8ae-53b1488010ed.png)
-
-**Login Page**
-![Screenshot (82)](https://user-images.githubusercontent.com/115489722/213993030-4345c1fa-65bc-4b75-96cf-76309434fc61.png)
 
 Product Page: The product page provides detailed information about the product, including images, description, features, and reviews. Users can also select the quantity and add the product to their cart from this page.
 
