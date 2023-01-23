@@ -23,6 +23,8 @@ Team Project JS201 (Quikr Clone)
 | Add Item | &#10004; | Ability of add a new Item on the Cart |
 | Remove a Item | &#10004; | Ability of Remove a Item from the Cart |
 | Checkout | &#10004; | Ability to Checkout |
+
+
 Navigation: The website has a clear and intuitive navigation menu that allows users to easily find the products they are looking for. The menu includes links to the different product categories, as well as a link to the cart and the account page.
 
 Product Catalog: The product catalog displays all the products available on the website, organized by category. Users can filter the products by price, brand, or other attributes to find the products they are looking for. Each product in the catalog includes an image, a title, a brief description, and the price.
