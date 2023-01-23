@@ -39,6 +39,8 @@ Catalog: The product catalog displays all the products available on the website,
 **Catalog**
 ![Screenshot (75)](https://user-images.githubusercontent.com/115489722/213990546-86551185-9e6c-4c34-a8ae-53b1488010ed.png)
 
+**Login Page**
+![Screenshot (82)](https://user-images.githubusercontent.com/115489722/213993030-4345c1fa-65bc-4b75-96cf-76309434fc61.png)
 
 Product Page: The product page provides detailed information about the product, including images, description, features, and reviews. Users can also select the quantity and add the product to their cart from this page.
 
@@ -47,10 +49,6 @@ Product Page: The product page provides detailed information about the product, 
 
 **Furnitures**
 ![Screenshot (77)](https://user-images.githubusercontent.com/115489722/213991038-21daf442-9d6b-463e-9ac3-dc1d8886d569.png)
-
-**Login Page**
-![Screenshot (82)](https://user-images.githubusercontent.com/115489722/213993030-4345c1fa-65bc-4b75-96cf-76309434fc61.png)
-
 
 Shopping Cart: The shopping cart page shows the items that the user has added to the cart, the total price, and the option to proceed to checkout. Users can also update the quantity of items in the cart or remove items from the cart from this page.
 
