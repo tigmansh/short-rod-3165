@@ -1,0 +1,5 @@
+###
+GET https://quikr.onrender.com/Furniture/
+
+###
+DELETE https://quikr.onrender.com/Furniture/118
