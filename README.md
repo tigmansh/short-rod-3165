@@ -2,7 +2,7 @@
 Team Project JS201 (Quikr Clone)
 ## Features
 
-<b>Products Features</b>
+<b>Featured Products</b>
 
 | Feature  |  Coded?       | Description  |
 |----------|:-------------:|:-------------|
